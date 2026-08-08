@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T12:04:30.263Z",
+  "generated_at": "2026-10-02T12:36:07.725Z",
   "items": {
     "problem:887": {
       "kind": "problem",
@@ -390,6 +390,32 @@
       "last_pushed_at": "2026-10-02T12:04:28.275Z",
       "language": "python",
       "lines": 23
+    },
+    "problem:942": {
+      "kind": "problem",
+      "id": "942",
+      "title": "Simple Word Tokenizer Encode and Decode",
+      "difficulty": "easy",
+      "category": "NLP",
+      "url": "https://www.deep-ml.com/problems/942",
+      "path": "problems/0942-simple-word-tokenizer-encode-and-decode",
+      "first_solved_at": "2026-08-08T13:12:43.779Z",
+      "last_pushed_at": "2026-08-08T13:12:43.779Z",
+      "language": "python",
+      "lines": 17
+    },
+    "lab:1": {
+      "kind": "lab",
+      "id": "1",
+      "title": "MNIST: Pytorch DataLoader",
+      "difficulty": "medium",
+      "category": "Data Pipelines",
+      "url": "https://www.deep-ml.com/labs/1",
+      "path": "labs/0001-mnist-pytorch-dataloader",
+      "first_solved_at": "2026-08-08T13:35:57.239Z",
+      "last_pushed_at": "2026-08-08T13:35:57.239Z",
+      "language": "python",
+      "lines": 21
     }
   }
 }
