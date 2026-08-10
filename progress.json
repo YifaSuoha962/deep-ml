@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T12:36:07.725Z",
+  "generated_at": "2026-10-02T12:36:10.043Z",
   "items": {
     "problem:887": {
       "kind": "problem",
@@ -416,6 +416,58 @@
       "last_pushed_at": "2026-08-08T13:35:57.239Z",
       "language": "python",
       "lines": 21
+    },
+    "problem:1": {
+      "kind": "problem",
+      "id": "1",
+      "title": "Matrix-Vector Dot Product",
+      "difficulty": "easy",
+      "category": "Linear Algebra",
+      "url": "https://www.deep-ml.com/problems/1",
+      "path": "problems/0001-matrix-vector-dot-product",
+      "first_solved_at": "2026-08-10T06:53:24.545Z",
+      "last_pushed_at": "2026-08-10T06:53:24.545Z",
+      "language": "python",
+      "lines": 21
+    },
+    "problem:18": {
+      "kind": "problem",
+      "id": "18",
+      "title": "Implement K-Fold Cross-Validation",
+      "difficulty": "medium",
+      "category": "Machine Learning",
+      "url": "https://www.deep-ml.com/problems/18",
+      "path": "problems/0018-implement-k-fold-cross-validation",
+      "first_solved_at": "2026-08-10T09:28:05.920Z",
+      "last_pushed_at": "2026-08-10T09:28:05.920Z",
+      "language": "python",
+      "lines": 43
+    },
+    "problem:17": {
+      "kind": "problem",
+      "id": "17",
+      "title": "K-Means Clustering",
+      "difficulty": "medium",
+      "category": "Machine Learning",
+      "url": "https://www.deep-ml.com/problems/17",
+      "path": "problems/0017-k-means-clustering",
+      "first_solved_at": "2026-08-10T14:29:20.875Z",
+      "last_pushed_at": "2026-08-10T14:29:20.875Z",
+      "language": "python",
+      "lines": 60
+    },
+    "problem:6": {
+      "kind": "problem",
+      "id": "6",
+      "title": "Calculate Eigenvalues of a Matrix",
+      "difficulty": "medium",
+      "category": "Linear Algebra",
+      "url": "https://www.deep-ml.com/problems/6",
+      "path": "problems/0006-calculate-eigenvalues-of-a-matrix",
+      "first_solved_at": "2026-08-10T14:33:03.750Z",
+      "last_pushed_at": "2026-08-10T14:33:03.750Z",
+      "language": "python",
+      "lines": 27
     }
   }
 }
