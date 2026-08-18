@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T12:36:12.053Z",
+  "generated_at": "2026-10-02T12:36:14.443Z",
   "items": {
     "problem:887": {
       "kind": "problem",
@@ -546,6 +546,32 @@
       "last_pushed_at": "2026-08-11T03:35:25.947Z",
       "language": "python",
       "lines": 21
+    },
+    "problem:541": {
+      "kind": "problem",
+      "id": "541",
+      "title": "Differential Sarsa Algorithm",
+      "difficulty": "hard",
+      "category": "Reinforcement Learning",
+      "url": "https://www.deep-ml.com/problems/541",
+      "path": "problems/0541-differential-sarsa-algorithm",
+      "first_solved_at": "2026-08-18T13:32:08.791Z",
+      "last_pushed_at": "2026-08-18T13:32:08.791Z",
+      "language": "python",
+      "lines": 76
+    },
+    "problem:10": {
+      "kind": "problem",
+      "id": "10",
+      "title": "Calculate Covariance Matrix",
+      "difficulty": "easy",
+      "category": "Statistics",
+      "url": "https://www.deep-ml.com/problems/10",
+      "path": "problems/0010-calculate-covariance-matrix",
+      "first_solved_at": "2026-08-18T13:54:37.043Z",
+      "last_pushed_at": "2026-08-18T13:54:37.043Z",
+      "language": "python",
+      "lines": 13
     }
   }
 }
