@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T12:36:14.443Z",
+  "generated_at": "2026-10-02T12:36:16.373Z",
   "items": {
     "problem:887": {
       "kind": "problem",
@@ -572,6 +572,32 @@
       "last_pushed_at": "2026-08-18T13:54:37.043Z",
       "language": "python",
       "lines": 13
+    },
+    "problem:184": {
+      "kind": "problem",
+      "id": "184",
+      "title": "Empirical Probability Mass Function (PMF)",
+      "difficulty": "easy",
+      "category": "Statistics",
+      "url": "https://www.deep-ml.com/problems/184",
+      "path": "problems/0184-empirical-probability-mass-function-pmf",
+      "first_solved_at": "2026-08-21T04:07:17.865Z",
+      "last_pushed_at": "2026-08-21T04:07:17.865Z",
+      "language": "python",
+      "lines": 25
+    },
+    "problem:1214": {
+      "kind": "problem",
+      "id": "1214",
+      "title": "Per-Token Decode Latency from Memory Bandwidth",
+      "difficulty": "easy",
+      "category": "Inference",
+      "url": "https://www.deep-ml.com/problems/1214",
+      "path": "problems/1214-per-token-decode-latency-from-memory-bandwidth",
+      "first_solved_at": "2026-08-21T04:08:46.376Z",
+      "last_pushed_at": "2026-08-21T04:08:46.376Z",
+      "language": "python",
+      "lines": 10
     }
   }
 }
