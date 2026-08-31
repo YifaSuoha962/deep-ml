@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T12:36:18.450Z",
+  "generated_at": "2026-10-02T12:36:20.417Z",
   "items": {
     "problem:887": {
       "kind": "problem",
@@ -611,6 +611,45 @@
       "last_pushed_at": "2026-08-30T15:28:16.716Z",
       "language": "python",
       "lines": 56
+    },
+    "problem:7": {
+      "kind": "problem",
+      "id": "7",
+      "title": "Matrix Transformation ",
+      "difficulty": "medium",
+      "category": "Linear Algebra",
+      "url": "https://www.deep-ml.com/problems/7",
+      "path": "problems/0007-matrix-transformation",
+      "first_solved_at": "2026-08-31T01:25:08.402Z",
+      "last_pushed_at": "2026-08-31T01:25:08.402Z",
+      "language": "python",
+      "lines": 51
+    },
+    "problem:9": {
+      "kind": "problem",
+      "id": "9",
+      "title": "Matrix times Matrix ",
+      "difficulty": "medium",
+      "category": "Linear Algebra",
+      "url": "https://www.deep-ml.com/problems/9",
+      "path": "problems/0009-matrix-times-matrix",
+      "first_solved_at": "2026-08-31T01:31:25.848Z",
+      "last_pushed_at": "2026-08-31T01:31:25.848Z",
+      "language": "python",
+      "lines": 10
+    },
+    "problem:728": {
+      "kind": "problem",
+      "id": "728",
+      "title": "Data-Efficient Action Mapping with Few Labeled Expert Samples",
+      "difficulty": "medium",
+      "category": "Machine Learning",
+      "url": "https://www.deep-ml.com/problems/728",
+      "path": "problems/0728-data-efficient-action-mapping-with-few-labeled-expert-samples",
+      "first_solved_at": "2026-08-31T02:16:57.489Z",
+      "last_pushed_at": "2026-08-31T02:16:57.489Z",
+      "language": "python",
+      "lines": 32
     }
   }
 }
