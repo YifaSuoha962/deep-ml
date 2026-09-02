@@ -2,7 +2,7 @@
 
 My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solution here was written by hand.
 
-**50** solved · 48 problems · 2 labs · 0 math
+**51** solved · 49 problems · 2 labs · 0 math
 
 ![Coverage](./coverage.svg)
 
@@ -54,6 +54,7 @@ My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solu
 | [Omitted-Variable Bias](https://www.deep-ml.com/problems/1358) | medium | 2026-09-17 | [solution](problems/1358-omitted-variable-bias) |
 | [Poisson Deviance and Overdispersion](https://www.deep-ml.com/problems/1367) | medium | 2026-10-01 | [solution](problems/1367-poisson-deviance-and-overdispersion) |
 | [SGD with Momentum Step](https://www.deep-ml.com/problems/1235) | medium | 2026-10-01 | [solution](problems/1235-sgd-with-momentum-step) |
+| [Thread-Safe Producer-Consumer Bounded Buffer](https://www.deep-ml.com/problems/1100) | medium | 2026-09-02 | [solution](problems/1100-thread-safe-producer-consumer-bounded-buffer) |
 | [Toy Models of Superposition: Feature Reconstruction](https://www.deep-ml.com/problems/862) | medium | 2026-09-18 | [solution](problems/0862-toy-models-of-superposition-feature-reconstruction) |
 | [Differential Sarsa Algorithm](https://www.deep-ml.com/problems/541) | hard | 2026-08-18 | [solution](problems/0541-differential-sarsa-algorithm) |
 | [Overlapping Look-Back KV Compression](https://www.deep-ml.com/problems/760) | hard | 2026-09-19 | [solution](problems/0760-overlapping-look-back-kv-compression) |

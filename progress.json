@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T12:36:20.417Z",
+  "generated_at": "2026-10-02T12:36:22.811Z",
   "items": {
     "problem:887": {
       "kind": "problem",
@@ -650,6 +650,19 @@
       "last_pushed_at": "2026-08-31T02:16:57.489Z",
       "language": "python",
       "lines": 32
+    },
+    "problem:1100": {
+      "kind": "problem",
+      "id": "1100",
+      "title": "Thread-Safe Producer-Consumer Bounded Buffer",
+      "difficulty": "medium",
+      "category": "Data Structures",
+      "url": "https://www.deep-ml.com/problems/1100",
+      "path": "problems/1100-thread-safe-producer-consumer-bounded-buffer",
+      "first_solved_at": "2026-09-02T12:18:19.074Z",
+      "last_pushed_at": "2026-09-02T12:18:19.074Z",
+      "language": "python",
+      "lines": 53
     }
   }
 }
