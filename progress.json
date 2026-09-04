@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T12:36:24.591Z",
+  "generated_at": "2026-10-02T12:36:26.313Z",
   "items": {
     "problem:887": {
       "kind": "problem",
@@ -689,6 +689,45 @@
       "last_pushed_at": "2026-09-03T03:19:06.503Z",
       "language": "python",
       "lines": 38
+    },
+    "problem:53": {
+      "kind": "problem",
+      "id": "53",
+      "title": "Implement Self-Attention Mechanism",
+      "difficulty": "medium",
+      "category": "Deep Learning",
+      "url": "https://www.deep-ml.com/problems/53",
+      "path": "problems/0053-implement-self-attention-mechanism",
+      "first_solved_at": "2026-09-04T02:40:44.506Z",
+      "last_pushed_at": "2026-09-04T02:40:44.506Z",
+      "language": "python",
+      "lines": 34
+    },
+    "problem:987": {
+      "kind": "problem",
+      "id": "987",
+      "title": "Laplace Smoothing for Bigram Probabilities",
+      "difficulty": "easy",
+      "category": "NLP",
+      "url": "https://www.deep-ml.com/problems/987",
+      "path": "problems/0987-laplace-smoothing-for-bigram-probabilities",
+      "first_solved_at": "2026-09-04T14:17:46.919Z",
+      "last_pushed_at": "2026-09-04T14:17:46.919Z",
+      "language": "python",
+      "lines": 19
+    },
+    "problem:13": {
+      "kind": "problem",
+      "id": "13",
+      "title": "Determinant of a 4x4 Matrix using Laplace's Expansion (hard)",
+      "difficulty": "hard",
+      "category": "Linear Algebra",
+      "url": "https://www.deep-ml.com/problems/13",
+      "path": "problems/0013-determinant-of-a-4x4-matrix-using-laplace-s-expansion-hard",
+      "first_solved_at": "2026-09-04T14:34:33.816Z",
+      "last_pushed_at": "2026-09-04T14:34:33.816Z",
+      "language": "python",
+      "lines": 84
     }
   }
 }
