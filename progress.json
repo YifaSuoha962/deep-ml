@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T12:36:26.313Z",
+  "generated_at": "2026-10-02T12:36:28.260Z",
   "items": {
     "problem:887": {
       "kind": "problem",
@@ -728,6 +728,32 @@
       "last_pushed_at": "2026-09-04T14:34:33.816Z",
       "language": "python",
       "lines": 84
+    },
+    "problem:320": {
+      "kind": "problem",
+      "id": "320",
+      "title": "Calculate Perplexity for Language Models",
+      "difficulty": "easy",
+      "category": "NLP",
+      "url": "https://www.deep-ml.com/problems/320",
+      "path": "problems/0320-calculate-perplexity-for-language-models",
+      "first_solved_at": "2026-09-05T03:41:26.764Z",
+      "last_pushed_at": "2026-09-05T03:41:26.764Z",
+      "language": "python",
+      "lines": 20
+    },
+    "problem:11": {
+      "kind": "problem",
+      "id": "11",
+      "title": "Solve Linear Equations using Jacobi Method",
+      "difficulty": "medium",
+      "category": "Linear Algebra",
+      "url": "https://www.deep-ml.com/problems/11",
+      "path": "problems/0011-solve-linear-equations-using-jacobi-method",
+      "first_solved_at": "2026-09-05T06:27:32.901Z",
+      "last_pushed_at": "2026-09-05T06:27:32.901Z",
+      "language": "python",
+      "lines": 32
     }
   }
 }

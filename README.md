@@ -2,7 +2,7 @@
 
 My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solution here was written by hand.
 
-**56** solved · 54 problems · 2 labs · 0 math
+**58** solved · 56 problems · 2 labs · 0 math
 
 ![Coverage](./coverage.svg)
 
@@ -17,6 +17,7 @@ My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solu
 | [Calculate Cosine Similarity Between Vectors](https://www.deep-ml.com/problems/76) | easy | 2026-09-23 | [solution](problems/0076-calculate-cosine-similarity-between-vectors) |
 | [Calculate Covariance Matrix](https://www.deep-ml.com/problems/10) | easy | 2026-08-18 | [solution](problems/0010-calculate-covariance-matrix) |
 | [Calculate Mean by Row or Column](https://www.deep-ml.com/problems/4) | easy | 2026-08-11 | [solution](problems/0004-calculate-mean-by-row-or-column) |
+| [Calculate Perplexity for Language Models](https://www.deep-ml.com/problems/320) | easy | 2026-09-05 | [solution](problems/0320-calculate-perplexity-for-language-models) |
 | [Calculate Unigram Probability from Corpus](https://www.deep-ml.com/problems/129) | easy | 2026-09-27 | [solution](problems/0129-calculate-unigram-probability-from-corpus) |
 | [Convert Vector to Diagonal Matrix](https://www.deep-ml.com/problems/35) | easy | 2026-09-18 | [solution](problems/0035-convert-vector-to-diagonal-matrix) |
 | [Dot Product Calculator](https://www.deep-ml.com/problems/83) | easy | 2026-09-27 | [solution](problems/0083-dot-product-calculator) |
@@ -58,6 +59,7 @@ My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solu
 | [Omitted-Variable Bias](https://www.deep-ml.com/problems/1358) | medium | 2026-09-17 | [solution](problems/1358-omitted-variable-bias) |
 | [Poisson Deviance and Overdispersion](https://www.deep-ml.com/problems/1367) | medium | 2026-10-01 | [solution](problems/1367-poisson-deviance-and-overdispersion) |
 | [SGD with Momentum Step](https://www.deep-ml.com/problems/1235) | medium | 2026-10-01 | [solution](problems/1235-sgd-with-momentum-step) |
+| [Solve Linear Equations using Jacobi Method](https://www.deep-ml.com/problems/11) | medium | 2026-09-05 | [solution](problems/0011-solve-linear-equations-using-jacobi-method) |
 | [Thread-Safe Producer-Consumer Bounded Buffer](https://www.deep-ml.com/problems/1100) | medium | 2026-09-02 | [solution](problems/1100-thread-safe-producer-consumer-bounded-buffer) |
 | [Toy Models of Superposition: Feature Reconstruction](https://www.deep-ml.com/problems/862) | medium | 2026-09-18 | [solution](problems/0862-toy-models-of-superposition-feature-reconstruction) |
 | [Determinant of a 4x4 Matrix using Laplace's Expansion (hard)](https://www.deep-ml.com/problems/13) | hard | 2026-09-04 | [solution](problems/0013-determinant-of-a-4x4-matrix-using-laplace-s-expansion-hard) |
