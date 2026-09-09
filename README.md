@@ -2,7 +2,7 @@
 
 My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solution here was written by hand.
 
-**60** solved · 58 problems · 2 labs · 0 math
+**62** solved · 60 problems · 2 labs · 0 math
 
 ![Coverage](./coverage.svg)
 
@@ -61,12 +61,14 @@ My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solu
 | [Omitted-Variable Bias](https://www.deep-ml.com/problems/1358) | medium | 2026-09-17 | [solution](problems/1358-omitted-variable-bias) |
 | [Poisson Deviance and Overdispersion](https://www.deep-ml.com/problems/1367) | medium | 2026-10-01 | [solution](problems/1367-poisson-deviance-and-overdispersion) |
 | [SGD with Momentum Step](https://www.deep-ml.com/problems/1235) | medium | 2026-10-01 | [solution](problems/1235-sgd-with-momentum-step) |
+| [Sigmoidal Accuracy-to-Log-Likelihood Scaling Law Fit](https://www.deep-ml.com/problems/790) | medium | 2026-09-09 | [solution](problems/0790-sigmoidal-accuracy-to-log-likelihood-scaling-law-fit) |
 | [Solve Linear Equations using Jacobi Method](https://www.deep-ml.com/problems/11) | medium | 2026-09-05 | [solution](problems/0011-solve-linear-equations-using-jacobi-method) |
 | [Thread-Safe Producer-Consumer Bounded Buffer](https://www.deep-ml.com/problems/1100) | medium | 2026-09-02 | [solution](problems/1100-thread-safe-producer-consumer-bounded-buffer) |
 | [Toy Models of Superposition: Feature Reconstruction](https://www.deep-ml.com/problems/862) | medium | 2026-09-18 | [solution](problems/0862-toy-models-of-superposition-feature-reconstruction) |
 | [Determinant of a 4x4 Matrix using Laplace's Expansion (hard)](https://www.deep-ml.com/problems/13) | hard | 2026-09-04 | [solution](problems/0013-determinant-of-a-4x4-matrix-using-laplace-s-expansion-hard) |
 | [Differential Sarsa Algorithm](https://www.deep-ml.com/problems/541) | hard | 2026-08-18 | [solution](problems/0541-differential-sarsa-algorithm) |
 | [Overlapping Look-Back KV Compression](https://www.deep-ml.com/problems/760) | hard | 2026-09-19 | [solution](problems/0760-overlapping-look-back-kv-compression) |
+| [Singular Value Decomposition (SVD) of 2x2 Matrix](https://www.deep-ml.com/problems/12) | hard | 2026-09-09 | [solution](problems/0012-singular-value-decomposition-svd-of-2x2-matrix) |
 | [SVD of a 2x2 Matrix](https://www.deep-ml.com/problems/28) | hard | 2026-09-19 | [solution](problems/0028-svd-of-a-2x2-matrix) |
 | [Trade Compute for Memory with Gradient Checkpointing](https://www.deep-ml.com/problems/1342) | hard | 2026-09-23 | [solution](problems/1342-trade-compute-for-memory-with-gradient-checkpointing) |
 | [Weisfeiler-Lehman Color Refinement and the 1-WL Test](https://www.deep-ml.com/problems/1481) | hard | 2026-10-01 | [solution](problems/1481-weisfeiler-lehman-color-refinement-and-the-1-wl-test) |

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T12:36:32.669Z",
+  "generated_at": "2026-10-02T12:36:34.578Z",
   "items": {
     "problem:887": {
       "kind": "problem",
@@ -780,6 +780,32 @@
       "last_pushed_at": "2026-09-08T04:58:48.712Z",
       "language": "python",
       "lines": 13
+    },
+    "problem:12": {
+      "kind": "problem",
+      "id": "12",
+      "title": "Singular Value Decomposition (SVD) of 2x2 Matrix",
+      "difficulty": "hard",
+      "category": "Linear Algebra",
+      "url": "https://www.deep-ml.com/problems/12",
+      "path": "problems/0012-singular-value-decomposition-svd-of-2x2-matrix",
+      "first_solved_at": "2026-09-09T01:50:15.506Z",
+      "last_pushed_at": "2026-09-09T01:50:15.506Z",
+      "language": "python",
+      "lines": 16
+    },
+    "problem:790": {
+      "kind": "problem",
+      "id": "790",
+      "title": "Sigmoidal Accuracy-to-Log-Likelihood Scaling Law Fit",
+      "difficulty": "medium",
+      "category": "Machine Learning",
+      "url": "https://www.deep-ml.com/problems/790",
+      "path": "problems/0790-sigmoidal-accuracy-to-log-likelihood-scaling-law-fit",
+      "first_solved_at": "2026-09-09T02:31:47.539Z",
+      "last_pushed_at": "2026-09-09T02:31:47.539Z",
+      "language": "python",
+      "lines": 33
     }
   }
 }
