@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T12:36:34.578Z",
+  "generated_at": "2026-10-02T12:36:36.751Z",
   "items": {
     "problem:887": {
       "kind": "problem",
@@ -806,6 +806,45 @@
       "last_pushed_at": "2026-09-09T02:31:47.539Z",
       "language": "python",
       "lines": 33
+    },
+    "problem:356": {
+      "kind": "problem",
+      "id": "356",
+      "title": "Label Encoding for Ordinal Variables",
+      "difficulty": "easy",
+      "category": "Data Structures",
+      "url": "https://www.deep-ml.com/problems/356",
+      "path": "problems/0356-label-encoding-for-ordinal-variables",
+      "first_solved_at": "2026-09-10T03:43:44.100Z",
+      "last_pushed_at": "2026-09-10T03:43:44.100Z",
+      "language": "python",
+      "lines": 17
+    },
+    "problem:112": {
+      "kind": "problem",
+      "id": "112",
+      "title": "Min-Max Scaling of Feature Values",
+      "difficulty": "easy",
+      "category": "Data Structures",
+      "url": "https://www.deep-ml.com/problems/112",
+      "path": "problems/0112-min-max-scaling-of-feature-values",
+      "first_solved_at": "2026-09-10T06:57:27.191Z",
+      "last_pushed_at": "2026-09-10T06:57:27.191Z",
+      "language": "python",
+      "lines": 23
+    },
+    "problem:354": {
+      "kind": "problem",
+      "id": "354",
+      "title": "Handle Missing Data with Imputation",
+      "difficulty": "medium",
+      "category": "Data Structures",
+      "url": "https://www.deep-ml.com/problems/354",
+      "path": "problems/0354-handle-missing-data-with-imputation",
+      "first_solved_at": "2026-09-10T06:59:49.966Z",
+      "last_pushed_at": "2026-09-10T06:59:49.966Z",
+      "language": "python",
+      "lines": 45
     }
   }
 }
