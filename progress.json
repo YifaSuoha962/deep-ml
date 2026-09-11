@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T12:36:36.751Z",
+  "generated_at": "2026-10-02T12:36:38.893Z",
   "items": {
     "problem:887": {
       "kind": "problem",
@@ -845,6 +845,45 @@
       "last_pushed_at": "2026-09-10T06:59:49.966Z",
       "language": "python",
       "lines": 45
+    },
+    "problem:355": {
+      "kind": "problem",
+      "id": "355",
+      "title": "Outlier Detection and Removal Using IQR Method",
+      "difficulty": "medium",
+      "category": "Data Structures",
+      "url": "https://www.deep-ml.com/problems/355",
+      "path": "problems/0355-outlier-detection-and-removal-using-iqr-method",
+      "first_solved_at": "2026-09-11T02:45:39.624Z",
+      "last_pushed_at": "2026-09-11T02:45:39.624Z",
+      "language": "python",
+      "lines": 36
+    },
+    "problem:357": {
+      "kind": "problem",
+      "id": "357",
+      "title": "Handle Imbalanced Data with SMOTE",
+      "difficulty": "medium",
+      "category": "Data Structures",
+      "url": "https://www.deep-ml.com/problems/357",
+      "path": "problems/0357-handle-imbalanced-data-with-smote",
+      "first_solved_at": "2026-09-11T03:42:56.331Z",
+      "last_pushed_at": "2026-09-11T03:42:56.331Z",
+      "language": "python",
+      "lines": 72
+    },
+    "problem:1371": {
+      "kind": "problem",
+      "id": "1371",
+      "title": "Latent Transition Model: Residual Delta MLP",
+      "difficulty": "medium",
+      "category": "Deep Learning",
+      "url": "https://www.deep-ml.com/problems/1371",
+      "path": "problems/1371-latent-transition-model-residual-delta-mlp",
+      "first_solved_at": "2026-09-11T05:00:07.279Z",
+      "last_pushed_at": "2026-09-11T05:00:07.279Z",
+      "language": "python",
+      "lines": 37
     }
   }
 }
