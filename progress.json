@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T12:36:38.893Z",
+  "generated_at": "2026-10-02T12:36:41.253Z",
   "items": {
     "problem:887": {
       "kind": "problem",
@@ -884,6 +884,19 @@
       "last_pushed_at": "2026-09-11T05:00:07.279Z",
       "language": "python",
       "lines": 37
+    },
+    "problem:549": {
+      "kind": "problem",
+      "id": "549",
+      "title": "Off-Policy n-Step TD Prediction with Importance Sampling",
+      "difficulty": "hard",
+      "category": "Reinforcement Learning",
+      "url": "https://www.deep-ml.com/problems/549",
+      "path": "problems/0549-off-policy-n-step-td-prediction-with-importance-sampling",
+      "first_solved_at": "2026-09-12T02:52:17.608Z",
+      "last_pushed_at": "2026-09-12T02:52:17.608Z",
+      "language": "python",
+      "lines": 94
     }
   }
 }
