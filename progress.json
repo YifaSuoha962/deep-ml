@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T12:36:41.253Z",
+  "generated_at": "2026-10-02T12:36:43.510Z",
   "items": {
     "problem:887": {
       "kind": "problem",
@@ -897,6 +897,32 @@
       "last_pushed_at": "2026-09-12T02:52:17.608Z",
       "language": "python",
       "lines": 94
+    },
+    "problem:204": {
+      "kind": "problem",
+      "id": "204",
+      "title": "Mutual Information",
+      "difficulty": "medium",
+      "category": "Information Theory",
+      "url": "https://www.deep-ml.com/problems/204",
+      "path": "problems/0204-mutual-information",
+      "first_solved_at": "2026-09-13T02:13:04.091Z",
+      "last_pushed_at": "2026-09-13T02:13:04.091Z",
+      "language": "python",
+      "lines": 29
+    },
+    "lab:19": {
+      "kind": "lab",
+      "id": "19",
+      "title": "Build a Tokenizer for Language Modeling",
+      "difficulty": "medium",
+      "category": "NLP",
+      "url": "https://www.deep-ml.com/labs/19",
+      "path": "labs/0019-build-a-tokenizer-for-language-modeling",
+      "first_solved_at": "2026-09-13T03:06:44.084Z",
+      "last_pushed_at": "2026-09-13T03:06:44.084Z",
+      "language": "python",
+      "lines": 139
     }
   }
 }

@@ -2,7 +2,7 @@
 
 My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solution here was written by hand.
 
-**69** solved · 67 problems · 2 labs · 0 math
+**71** solved · 68 problems · 3 labs · 0 math
 
 ![Coverage](./coverage.svg)
 
@@ -61,6 +61,7 @@ My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solu
 | [Latent Transition Model: Residual Delta MLP](https://www.deep-ml.com/problems/1371) | medium | 2026-09-11 | [solution](problems/1371-latent-transition-model-residual-delta-mlp) |
 | [Matrix times Matrix ](https://www.deep-ml.com/problems/9) | medium | 2026-08-31 | [solution](problems/0009-matrix-times-matrix) |
 | [Matrix Transformation ](https://www.deep-ml.com/problems/7) | medium | 2026-08-31 | [solution](problems/0007-matrix-transformation) |
+| [Mutual Information](https://www.deep-ml.com/problems/204) | medium | 2026-09-13 | [solution](problems/0204-mutual-information) |
 | [Numerical Gradient Checking](https://www.deep-ml.com/problems/313) | medium | 2026-08-30 | [solution](problems/0313-numerical-gradient-checking) |
 | [Numerically Stable Cross-Entropy](https://www.deep-ml.com/problems/914) | medium | 2026-09-16 | [solution](problems/0914-numerically-stable-cross-entropy) |
 | [Omitted-Variable Bias](https://www.deep-ml.com/problems/1358) | medium | 2026-09-17 | [solution](problems/1358-omitted-variable-bias) |
@@ -84,6 +85,7 @@ My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solu
 
 | | Difficulty | Solved | |
 | --- | --- | --- | --- |
+| [Build a Tokenizer for Language Modeling](https://www.deep-ml.com/labs/19) | medium | 2026-09-13 | [solution](labs/0019-build-a-tokenizer-for-language-modeling) |
 | [MNIST: Pytorch DataLoader](https://www.deep-ml.com/labs/1) | medium | 2026-08-08 | [solution](labs/0001-mnist-pytorch-dataloader) |
 | [Train a Tabular Policy with DPO](https://www.deep-ml.com/labs/37) | medium | 2026-08-11 | [solution](labs/0037-train-a-tabular-policy-with-dpo) |
 
