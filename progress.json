@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T12:36:43.510Z",
+  "generated_at": "2026-10-02T12:36:45.418Z",
   "items": {
     "problem:887": {
       "kind": "problem",
@@ -923,6 +923,45 @@
       "last_pushed_at": "2026-09-13T03:06:44.084Z",
       "language": "python",
       "lines": 139
+    },
+    "problem:1387": {
+      "kind": "problem",
+      "id": "1387",
+      "title": "Looped Transformer Stack Forward Pass",
+      "difficulty": "medium",
+      "category": "Pytorch",
+      "url": "https://www.deep-ml.com/problems/1387",
+      "path": "problems/1387-looped-transformer-stack-forward-pass",
+      "first_solved_at": "2026-09-14T03:02:11.082Z",
+      "last_pushed_at": "2026-09-14T03:02:11.082Z",
+      "language": "python",
+      "lines": 37
+    },
+    "problem:414": {
+      "kind": "problem",
+      "id": "414",
+      "title": "Compute Arithmetic Intensity and Classify Bottleneck",
+      "difficulty": "easy",
+      "category": "Inference",
+      "url": "https://www.deep-ml.com/problems/414",
+      "path": "problems/0414-compute-arithmetic-intensity-and-classify-bottleneck",
+      "first_solved_at": "2026-09-14T04:59:09.677Z",
+      "last_pushed_at": "2026-09-14T04:59:09.677Z",
+      "language": "python",
+      "lines": 36
+    },
+    "problem:119": {
+      "kind": "problem",
+      "id": "119",
+      "title": "Solve System of Linear Equations Using Cramer's Rule",
+      "difficulty": "medium",
+      "category": "Linear Algebra",
+      "url": "https://www.deep-ml.com/problems/119",
+      "path": "problems/0119-solve-system-of-linear-equations-using-cramer-s-rule",
+      "first_solved_at": "2026-09-14T05:21:19.009Z",
+      "last_pushed_at": "2026-09-14T05:21:19.009Z",
+      "language": "python",
+      "lines": 30
     }
   }
 }
