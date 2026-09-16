@@ -9,9 +9,14 @@ def log_softmax(scores: List[float]) -> torch.Tensor:
     Returns:
         torch.Tensor of log-softmax values
     """
+
     # Your code here
     scores = torch.tensor(scores)
+    # for numerical stability
+    scores = scores - scores.max()
     log_exp_sum = torch.log(torch.sum(torch.exp(scores)))
     log_softmax = scores - log_exp_sum
     return log_softmax
-    # return [x.item() for x in log_softmax]
+    
+    # api call
+    return tor
