@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T04:54:50.055Z",
+  "generated_at": "2026-09-17T04:55:32.824Z",
   "items": {
     "problem:887": {
       "kind": "problem",
@@ -101,7 +101,7 @@
       "url": "https://www.deep-ml.com/problems/1358",
       "path": "problems/1358-omitted-variable-bias",
       "first_solved_at": "2026-09-17T04:52:28.097Z",
-      "last_pushed_at": "2026-09-17T04:54:48.263Z",
+      "last_pushed_at": "2026-09-17T04:55:29.946Z",
       "language": "python",
       "lines": 80
     }
