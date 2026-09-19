@@ -1,6 +1,5 @@
 import numpy as np
 
-
 def lookback_compressed_kv(
     H,
     W_aKV,
@@ -45,6 +44,9 @@ def lookback_compressed_kv(
     # 1. Project every token into two KV streams
     #    and two compression-logit streams
     # ------------------------------------------------------------
+    """
+    Note the different roles of a (current blk) and b (previous blk)
+    """
     a_kv = H @ W_aKV          # (n, c)
     b_kv = H @ W_bKV          # (n, c)
 
@@ -118,7 +120,7 @@ def lookback_compressed_kv(
         )                                                   # (2m, c)
 
         # --------------------------------------------------------
-        # 5. Weighted sum over the 2m tokens
+        # 5. Weighted sum of each feature over the 2m tokens into a compacted feature
         # --------------------------------------------------------
         compressed = np.sum(
             weights * kv,
@@ -128,77 +130,5 @@ def lookback_compressed_kv(
         outputs.append(compressed)
 
     return np.asarray(outputs).tolist()
-
-# import numpy as np
-
-# def lookback_compressed_kv(H, W_aKV, W_bKV, W_aZ, W_bZ, B_a, B_b, m):
-#     """
-#     H: (n, d) hidden states; n must be divisible by m
-#     W_aKV, W_bKV: (d, c) KV projection weights (current, look-back)
-#     W_aZ, W_bZ: (d, c) compression-weight projection matrices
-#     B_a, B_b: (m, c) learnable positional biases
-#     m: block size
-
-#     Returns: list of lists of shape (n // m, c) with the compressed KV entries.
-#     """
-#     # Your code here
-    
-#     # Convert inputs to NumPy arrays
-#     H = np.asarray(H, dtype=float)
-#     W_aKV = np.asarray(W_aKV, dtype=float)
-#     W_bKV = np.asarray(W_bKV, dtype=float)
-#     W_aZ = np.asarray(W_aZ, dtype=float)
-#     W_bZ = np.asarray(W_bZ, dtype=float)
-#     B_a = np.asarray(B_a, dtype=float)
-#     B_b = np.asarray(B_b, dtype=float)
-
-#     n, d = H.shape
-#     if n % m != 0:
-#         raise ValueError("n must be divisible by m")
-#     num_blocks = n // m
-
-#     # 1. Project each token to two KV and compression-weight streams
-#     a_kv = H @ W_aKV
-#     b_kv = H @ W_bKV
-#     a_logits = H @ W_aZ
-#     b_logits = H @ W_bZ
-
-#     outputs = []
-
-#     # 2. compress each non-overlapping num_block
-#     for i in range(num_blocks):
-#         cur_start = i * m
-#         cur_end = (i + 1) * m
-#         # stream a
-#         cur_kv = a_kv[cur_start: cur_end]                   # KV 
-#         cur_logits = a_logits[cur_start: cur_end] + B_a     # query
-#         if i == 0:
-#             # the 1st block has no previous block.
-#             prev_kv = np.zeros_like(cur_kv)
-#             prev_logits = np.full_like(cur_logits, -np.inf)
-#         else:
-#             prev_start = (i - 1) * m
-#             prev_end = i * m
-#             # prev block for stream b
-#             prev_kv = a_kv[prev_start: prev_end]
-#             prev_logits = a_logits[prev_start: prev_end]
-#         """
-#         Note: the later streams need to consider the previous streams
-#         """
-        
-#         # 3. combine the two blocks
-#         kv = np.concatenate([prev_kv, cur_kv], axis=0)
-#         logits = np.concatenate([prev_logits, cur_logits], axis=0)
-
-#         # 4. compute attention scores over the combined blcoks
-#         max_logits = np.max(logits, axis=0, keepdims=True)   # why
-#         exp_logits = np.exp(logits - max_logits)    # numerical stability
-#         weights = exp_logits / np.sum(exp_logits, axis=0, keepdims=True)
-
-#         # 5. weighted sum over 2m tokens
-#         compressed = np.sum(weights * kv, axis=0)
-#         outputs.append(compressed)
-
-#     return np.asarray(outputs).tolist()    
 
 

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T07:57:45.317Z",
+  "generated_at": "2026-09-19T08:17:38.873Z",
   "items": {
     "problem:887": {
       "kind": "problem",
@@ -153,9 +153,9 @@
       "url": "https://www.deep-ml.com/problems/760",
       "path": "problems/0760-overlapping-look-back-kv-compression",
       "first_solved_at": "2026-09-19T07:57:43.545Z",
-      "last_pushed_at": "2026-09-19T07:57:43.545Z",
+      "last_pushed_at": "2026-09-19T08:17:36.607Z",
       "language": "python",
-      "lines": 205
+      "lines": 135
     }
   }
 }
