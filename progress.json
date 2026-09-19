@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T01:52:46.929Z",
+  "generated_at": "2026-09-19T07:57:45.317Z",
   "items": {
     "problem:887": {
       "kind": "problem",
@@ -143,6 +143,19 @@
       "last_pushed_at": "2026-09-18T01:52:45.687Z",
       "language": "python",
       "lines": 17
+    },
+    "problem:760": {
+      "kind": "problem",
+      "id": "760",
+      "title": "Overlapping Look-Back KV Compression",
+      "difficulty": "hard",
+      "category": "NLP",
+      "url": "https://www.deep-ml.com/problems/760",
+      "path": "problems/0760-overlapping-look-back-kv-compression",
+      "first_solved_at": "2026-09-19T07:57:43.545Z",
+      "last_pushed_at": "2026-09-19T07:57:43.545Z",
+      "language": "python",
+      "lines": 205
     }
   }
 }
