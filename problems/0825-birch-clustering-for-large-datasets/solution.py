@@ -3,14 +3,9 @@ import numpy as np
 def birch_cluster(X, threshold):
     """
     Single-level BIRCH clustering.
-
     X: array-like of shape (n_samples, n_features)
-
     threshold: float, max allowed subcluster radius
-
-    Returns:
-        list of centroids (each a list of floats),
-        sorted lexicographically.
+    Returns: list of centroids (each a list of floats), sorted lexicographically.
     """
     X = np.asarray(X, dtype=float)
 
@@ -21,17 +16,16 @@ def birch_cluster(X, threshold):
 
     def make_cf(x):
         N = 1
-        LS = x.copy()
-        SS = x ** 2
-        return [N, LS, SS]
-
+        LS = x.copy()   # linear sum
+        SS = x ** 2     # squared sum
+        return [N, LS, SS]  # tuple definition: (N,LS,SS)
+    
     def centroid(cf):
         N, LS, SS = cf
         return LS / N
-
+    
     def radius(cf):
         N, LS, SS = cf
-
         mean = LS / N
         variance = SS / N - mean ** 2
 
@@ -40,39 +34,44 @@ def birch_cluster(X, threshold):
 
         return np.sqrt(np.sum(variance))
 
+    def merge_cf(cf1, cf2):
+        N_1, LS_1, SS_1 = cf1
+        N_2, LS_2, SS_2 = cf2
+        return [N_1 + N_2, LS_1 + LS_2, SS_1 + SS_2]
+
     for x in X:
-
-        # 1. First point creates the first subcluster
+        tmp_cf = make_cf(x)
+        
+        # case 1
         if not subclusters:
-            subclusters.append(make_cf(x))
+            subclusters.append(tmp_cf)
+            # jump over the following steps
             continue
-
-        # 2. Find closest centroid
+        # case 2
+        # 2.1 traverse all subclusters and calculate pairwise distance
         distances = []
-
         for cf in subclusters:
-            c = centroid(cf)
-            dist = np.sqrt(np.sum((x - c) ** 2))
+            centroid_cf = centroid(cf)
+            dist = np.sqrt(np.sum((centroid_cf - x) ** 2))  # Euclidean distance: sum along the feature dim
             distances.append(dist)
-
         # np.argmin naturally breaks ties by smaller index
+        """
+        tip: how to find the index corresponding to the expected value (min /max)
+        """
+        # 2.2 find the closest subcluster
         nearest_idx = int(np.argmin(distances))
-
-        # 3. Tentatively absorb x
-        N, LS, SS = subclusters[nearest_idx]
-
-        new_cf = [
-            N + 1,
-            LS + x,
-            SS + x ** 2
-        ]
-
-        # Keep absorption only if radius <= threshold
-        if radius(new_cf) <= threshold:
-            subclusters[nearest_idx] = new_cf
+        
+        # 3. absorb x into that subcluster
+        """
+        Note the criteria: If the resulting radius ≤ threshold, keep the absorption,
+        otherwise create a new one.
+        """
+        res_cf = merge_cf(tmp_cf, subclusters[nearest_idx])
+        if radius(res_cf) <= threshold:
+            subclusters[nearest_idx] = res_cf
         else:
-            subclusters.append(make_cf(x))
-
+            subclusters.append(tmp_cf)
+    
     # 4. Compute final centroids
     centroids = [
         centroid(cf).tolist()
@@ -83,3 +82,7 @@ def birch_cluster(X, threshold):
     centroids.sort()
 
     return centroids
+
+
+
+
