@@ -34,7 +34,7 @@ def calculate_correlation_matrix(
 
     # std 
     """
-    dimension reduce to 1 (n_samples, n_features) -> (n_samples,)
+    dimension reduce to 1 (n_samples, n_features) -> (n_features,)
     """
     std_X = torch.sqrt((X_residual ** 2).sum(dim=0) / n)
     std_Y = torch.sqrt((Y_residual ** 2).sum(dim=0) / n)
