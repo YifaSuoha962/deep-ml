@@ -33,6 +33,9 @@ def calculate_correlation_matrix(
     cov = (X_residual.T @ Y_residual) / n
 
     # std 
+    """
+    dimension reduce to 1 (n_samples, n_features) -> (n_samples,)
+    """
     std_X = torch.sqrt((X_residual ** 2).sum(dim=0) / n)
     std_Y = torch.sqrt((Y_residual ** 2).sum(dim=0) / n)
 
@@ -42,7 +45,11 @@ def calculate_correlation_matrix(
     std_Y = std_Y.clamp_min(eps)
 
     # correlation matrix 
-    corr = cov / (std_X.unsqueeze(1) * std_Y.unsqueeze(0))
+    """
+    r(X,Y) = cov(X,Y) / \sqrt(var(X) * var(Y))
+    """
+    # needs hadmad operation, std should be the matrix form 
+    corr = cov / (std_X.unsqueeze(1) * std_Y.unsqueeze(0))   
 
     # fill diagonal for error calibration
     if Y is None:
