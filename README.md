@@ -2,7 +2,7 @@
 
 My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solution here was written by hand.
 
-**18** solved · 18 problems · 0 labs · 0 math
+**19** solved · 19 problems · 0 labs · 0 math
 
 ![Coverage](./coverage.svg)
 
@@ -23,6 +23,7 @@ My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solu
 | [Binomial Distribution Probability](https://www.deep-ml.com/problems/79) | medium | 2026-09-18 | [solution](problems/0079-binomial-distribution-probability) |
 | [BIRCH Clustering for Large Datasets](https://www.deep-ml.com/problems/825) | medium | 2026-09-20 | [solution](problems/0825-birch-clustering-for-large-datasets) |
 | [Calculate Correlation Matrix](https://www.deep-ml.com/problems/37) | medium | 2026-09-20 | [solution](problems/0037-calculate-correlation-matrix) |
+| [Diffusion Model U-Net Time Embedding](https://www.deep-ml.com/problems/399) | medium | 2026-09-26 | [solution](problems/0399-diffusion-model-u-net-time-embedding) |
 | [Forward Diffusion Process](https://www.deep-ml.com/problems/303) | medium | 2026-09-26 | [solution](problems/0303-forward-diffusion-process) |
 | [Numerically Stable Cross-Entropy](https://www.deep-ml.com/problems/914) | medium | 2026-09-16 | [solution](problems/0914-numerically-stable-cross-entropy) |
 | [Omitted-Variable Bias](https://www.deep-ml.com/problems/1358) | medium | 2026-09-17 | [solution](problems/1358-omitted-variable-bias) |
