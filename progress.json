@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-27T06:04:21.726Z",
+  "generated_at": "2026-09-27T06:05:31.680Z",
   "items": {
     "problem:887": {
       "kind": "problem",
@@ -257,9 +257,9 @@
       "url": "https://www.deep-ml.com/problems/45",
       "path": "problems/0045-linear-kernel-function",
       "first_solved_at": "2026-09-27T06:04:19.473Z",
-      "last_pushed_at": "2026-09-27T06:04:19.473Z",
+      "last_pushed_at": "2026-09-27T06:05:30.734Z",
       "language": "python",
-      "lines": 18
+      "lines": 6
     }
   }
 }
