@@ -24,6 +24,12 @@ def exact_match_score(predictions: list[str], references: list[str]) -> float:
         text = text.lower()
         # 2. 去除所有标点字符
         text = text.translate(str.maketrans('', '', string.punctuation))
+        """
+        string.punctuation: !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~ ;
+        str.maketrans 是一个静态方法，用于创建字符映射表（翻译表），通常有三种用法：
+        - 两个参数：maketrans(x, y)，将 x 中的字符映射到 y 中对应位置的字符。
+        - 三个参数：maketrans(x, y, z)，额外将 z 中的字符映射为 None（即删除）。
+        """
         # 3. 压缩多个空白字符为单个空格，并去除首尾空白
         text = ' '.join(text.split())
         return text
