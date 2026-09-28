@@ -7,12 +7,6 @@ def feature_scaling(data: np.ndarray) -> Tuple[np.ndarray, np.ndarray]:
     输入 data: 形状 (n_samples, n_features)
     返回: (standardized_data, normalized_data)
     """
-
-	"""
-	Notes:
-		1. normalize along the feature channels, not the samples
-		2. avoid zero-devision
-	"""
     # 1. 标准化（对每个特征列）
     mu_feats = np.mean(data, axis=0)          # 形状 (n_features,)
     std_feats = np.std(data, axis=0)          # 形状 (n_features,)
