@@ -2,7 +2,7 @@
 
 My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solution here was written by hand.
 
-**27** solved · 27 problems · 0 labs · 0 math
+**28** solved · 28 problems · 0 labs · 0 math
 
 ![Coverage](./coverage.svg)
 
@@ -33,6 +33,7 @@ My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solu
 | [Forward Diffusion Process](https://www.deep-ml.com/problems/303) | medium | 2026-09-26 | [solution](problems/0303-forward-diffusion-process) |
 | [Numerically Stable Cross-Entropy](https://www.deep-ml.com/problems/914) | medium | 2026-09-16 | [solution](problems/0914-numerically-stable-cross-entropy) |
 | [Omitted-Variable Bias](https://www.deep-ml.com/problems/1358) | medium | 2026-09-17 | [solution](problems/1358-omitted-variable-bias) |
+| [Poisson Deviance and Overdispersion](https://www.deep-ml.com/problems/1367) | medium | 2026-10-01 | [solution](problems/1367-poisson-deviance-and-overdispersion) |
 | [SGD with Momentum Step](https://www.deep-ml.com/problems/1235) | medium | 2026-10-01 | [solution](problems/1235-sgd-with-momentum-step) |
 | [Toy Models of Superposition: Feature Reconstruction](https://www.deep-ml.com/problems/862) | medium | 2026-09-18 | [solution](problems/0862-toy-models-of-superposition-feature-reconstruction) |
 | [Overlapping Look-Back KV Compression](https://www.deep-ml.com/problems/760) | hard | 2026-09-19 | [solution](problems/0760-overlapping-look-back-kv-compression) |

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T06:12:51.946Z",
+  "generated_at": "2026-10-01T06:45:00.449Z",
   "items": {
     "problem:887": {
       "kind": "problem",
@@ -351,6 +351,19 @@
       "last_pushed_at": "2026-10-01T06:12:50.359Z",
       "language": "python",
       "lines": 13
+    },
+    "problem:1367": {
+      "kind": "problem",
+      "id": "1367",
+      "title": "Poisson Deviance and Overdispersion",
+      "difficulty": "medium",
+      "category": "Statistics",
+      "url": "https://www.deep-ml.com/problems/1367",
+      "path": "problems/1367-poisson-deviance-and-overdispersion",
+      "first_solved_at": "2026-10-01T06:44:59.360Z",
+      "last_pushed_at": "2026-10-01T06:44:59.360Z",
+      "language": "python",
+      "lines": 84
     }
   }
 }
