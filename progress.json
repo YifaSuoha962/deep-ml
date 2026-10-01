@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T06:11:31.154Z",
+  "generated_at": "2026-10-01T06:12:51.946Z",
   "items": {
     "problem:887": {
       "kind": "problem",
@@ -348,9 +348,9 @@
       "url": "https://www.deep-ml.com/problems/84",
       "path": "problems/0084-phi-transformation-for-polynomial-features",
       "first_solved_at": "2026-10-01T06:11:29.325Z",
-      "last_pushed_at": "2026-10-01T06:11:29.325Z",
+      "last_pushed_at": "2026-10-01T06:12:50.359Z",
       "language": "python",
-      "lines": 20
+      "lines": 13
     }
   }
 }

@@ -10,11 +10,4 @@ def phi_transform(data: list[float], degree: int) -> list[list[float]]:
 
 	"""
 	# Your code here
-	if degree < 0:
-		return []
-	else:
-		phis_list = []
-		for x in data:
-			phis = [x ** i for i in range(degree + 1)]
-			phis_list.append(phis)
-	return phis_list
+	return [] if degree < 0 else [[x ** i for i in range(degree + 1)] for x in data]
