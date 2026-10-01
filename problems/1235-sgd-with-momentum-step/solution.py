@@ -14,6 +14,6 @@ def momentum_step(w, grad, v, lr, mu):
         (w_new, v_new) tuple of tensors
     """
     # TODO: v_new = mu * v + grad; w_new = w - lr * v_new
-    v_new = mu * v + grad
+    v_new = mu * v + grad       # converge when the momentum and the gradient cancel each other
     w_new = w - lr * v_new
     return w_new, v_new
