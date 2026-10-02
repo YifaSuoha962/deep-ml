@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T12:36:47.422Z",
+  "generated_at": "2026-10-02T12:46:41.915Z",
   "items": {
     "problem:887": {
       "kind": "problem",
@@ -374,9 +374,9 @@
       "url": "https://www.deep-ml.com/problems/65",
       "path": "problems/0065-implement-compressed-row-sparse-matrix-csr-format-conversion",
       "first_solved_at": "2026-10-02T11:44:31.973Z",
-      "last_pushed_at": "2026-10-02T11:44:31.973Z",
+      "last_pushed_at": "2026-10-02T12:46:39.915Z",
       "language": "python",
-      "lines": 22
+      "lines": 43
     },
     "problem:66": {
       "kind": "problem",
