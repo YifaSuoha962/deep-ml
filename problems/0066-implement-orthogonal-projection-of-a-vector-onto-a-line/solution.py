@@ -16,6 +16,7 @@ def orthogonal_projection(v, L):
     dot_LL = np.dot(L, L)      # L · L
     
     # 投影公式：proj_L(v) = (v·L / L·L) * L
+	# proof: assume proj_L(v) = cL -> (v - cL) * L = 0 -- residual is orthogonal to L
     proj = (dot_vL / dot_LL) * L
     
     # 转为列表并四舍五入到 3 位小数
