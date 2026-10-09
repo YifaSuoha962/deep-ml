@@ -16,7 +16,7 @@ def calculate_auc(y_true, y_scores) -> float:
     y_scores = torch.as_tensor(y_scores, dtype=torch.float32)
     
     # 正负样本数
-    P = y_true.sum().item()
+    P = y_true.sum().item()     # all True ground truths
     N = len(y_true) - P
     if P == 0 or N == 0:
         return 0.0  # 边界情况：全为同一类
@@ -30,10 +30,10 @@ def calculate_auc(y_true, y_scores) -> float:
     fpr_list = [0.0]
     tp = 0
     fp = 0
-    # 我们只关心被预测为正的样本中有多少是真正的正例（TP）和负例（FP）
+    # 我们只关心 **被预测为正的样本** 中有多少是真正的正例（TP）和负例（FP）
     for label in y_true_sorted:
         if label == 1:
-            tp += 1
+            tp += 1     # 在上次预测阈值结果之上累加，因为降序上次预测为正的这次也是正
         else:
             fp += 1
         tpr_list.append(tp / P)
