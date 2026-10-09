@@ -30,6 +30,7 @@ def calculate_auc(y_true, y_scores) -> float:
     fpr_list = [0.0]
     tp = 0
     fp = 0
+    # 我们只关心被预测为正的样本中有多少是真正的正例（TP）和负例（FP）
     for label in y_true_sorted:
         if label == 1:
             tp += 1
