@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T04:12:46.826Z",
+  "generated_at": "2026-10-09T04:19:30.655Z",
   "items": {
     "problem:887": {
       "kind": "problem",
@@ -1037,9 +1037,9 @@
       "url": "https://www.deep-ml.com/problems/1147",
       "path": "problems/1147-queue-from-two-stacks-and-a-min-stack",
       "first_solved_at": "2026-10-09T04:12:45.689Z",
-      "last_pushed_at": "2026-10-09T04:12:45.689Z",
+      "last_pushed_at": "2026-10-09T04:19:29.432Z",
       "language": "python",
-      "lines": 46
+      "lines": 48
     }
   }
 }

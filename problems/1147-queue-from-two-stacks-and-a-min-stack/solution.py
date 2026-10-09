@@ -1,9 +1,10 @@
 def process_operations(operations):
-    output_list = []       # 模拟 dequeue() -- from collections import deque
+    output_list = []
 
     # 队列：用两个 list 模拟（in_stack 负责入队，out_stack 负责出队）
+    # 模拟 dequeue() -- from collections import dequeue
     in_stack = []
-    out_stack = []
+    # out_stack = []
 
     # 最小栈：一个 list 存元素，另一个 list 同步存当前最小值
     stack = []
@@ -15,14 +16,15 @@ def process_operations(operations):
         if tag == "enqueue":
             # queue.append(v)
             v = op[1]
-            in_stack.append(v)
+            in_stack.append(v)    
 
         elif tag == "dequeue":
             # 如果 out_stack 为空，将 in_stack 全部倒入 out_stack（顺序反转）-- queue.popleft()
-            if not out_stack:
-                while in_stack:
-                    out_stack.append(in_stack.pop())  
-            output_list.append(out_stack.pop())
+            output_list.append(in_stack.pop(0))
+            # if not out_stack:
+            #     while in_stack:
+            #         out_stack.append(in_stack.pop())  
+            # output_list.append(out_stack.pop())
 
         elif tag == "mpush":
             v = op[1]
