@@ -2,7 +2,7 @@
 
 My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solution here was written by hand.
 
-**77** solved · 74 problems · 3 labs · 0 math
+**78** solved · 75 problems · 3 labs · 0 math
 
 ![Coverage](./coverage.svg)
 
@@ -26,6 +26,7 @@ My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solu
 | [Exact Match Benchmark Decontamination Check](https://www.deep-ml.com/problems/788) | easy | 2026-09-16 | [solution](problems/0788-exact-match-benchmark-decontamination-check) |
 | [Exact Match Score with Normalization](https://www.deep-ml.com/problems/325) | easy | 2026-09-27 | [solution](problems/0325-exact-match-score-with-normalization) |
 | [Feature Scaling Implementation](https://www.deep-ml.com/problems/16) | easy | 2026-09-28 | [solution](problems/0016-feature-scaling-implementation) |
+| [Implement Compressed Column Sparse Matrix Format (CSC)](https://www.deep-ml.com/problems/67) | easy | 2026-10-09 | [solution](problems/0067-implement-compressed-column-sparse-matrix-format-csc) |
 | [Implement Compressed Row Sparse Matrix (CSR) Format Conversion](https://www.deep-ml.com/problems/65) | easy | 2026-10-02 | [solution](problems/0065-implement-compressed-row-sparse-matrix-csr-format-conversion) |
 | [Implement Global Average Pooling](https://www.deep-ml.com/problems/114) | easy | 2026-09-08 | [solution](problems/0114-implement-global-average-pooling) |
 | [Implement Orthogonal Projection of a Vector onto a Line](https://www.deep-ml.com/problems/66) | easy | 2026-10-02 | [solution](problems/0066-implement-orthogonal-projection-of-a-vector-onto-a-line) |
