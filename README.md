@@ -2,7 +2,7 @@
 
 My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solution here was written by hand.
 
-**78** solved · 75 problems · 3 labs · 0 math
+**79** solved · 76 problems · 3 labs · 0 math
 
 ![Coverage](./coverage.svg)
 
@@ -50,6 +50,7 @@ My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solu
 | [Analyze Singular Value Spectrum to Determine Intrinsic Rank](https://www.deep-ml.com/problems/876) | medium | 2026-10-03 | [solution](problems/0876-analyze-singular-value-spectrum-to-determine-intrinsic-rank) |
 | [Binomial Distribution Probability](https://www.deep-ml.com/problems/79) | medium | 2026-09-18 | [solution](problems/0079-binomial-distribution-probability) |
 | [BIRCH Clustering for Large Datasets](https://www.deep-ml.com/problems/825) | medium | 2026-09-20 | [solution](problems/0825-birch-clustering-for-large-datasets) |
+| [Calculate AUC (Area Under ROC Curve)](https://www.deep-ml.com/problems/277) | medium | 2026-10-09 | [solution](problems/0277-calculate-auc-area-under-roc-curve) |
 | [Calculate Correlation Matrix](https://www.deep-ml.com/problems/37) | medium | 2026-09-20 | [solution](problems/0037-calculate-correlation-matrix) |
 | [Calculate Eigenvalues of a Matrix](https://www.deep-ml.com/problems/6) | medium | 2026-08-10 | [solution](problems/0006-calculate-eigenvalues-of-a-matrix) |
 | [Data-Efficient Action Mapping with Few Labeled Expert Samples](https://www.deep-ml.com/problems/728) | medium | 2026-08-31 | [solution](problems/0728-data-efficient-action-mapping-with-few-labeled-expert-samples) |
