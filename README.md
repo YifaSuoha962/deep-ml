@@ -2,7 +2,7 @@
 
 My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solution here was written by hand.
 
-**81** solved · 78 problems · 3 labs · 0 math
+**82** solved · 79 problems · 3 labs · 0 math
 
 ![Coverage](./coverage.svg)
 
@@ -62,6 +62,7 @@ My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solu
 | [Handle Missing Data with Imputation](https://www.deep-ml.com/problems/354) | medium | 2026-09-10 | [solution](problems/0354-handle-missing-data-with-imputation) |
 | [Implement BatchNorm2d from Scratch (training mode)](https://www.deep-ml.com/problems/902) | medium | 2026-09-07 | [solution](problems/0902-implement-batchnorm2d-from-scratch-training-mode) |
 | [Implement K-Fold Cross-Validation](https://www.deep-ml.com/problems/18) | medium | 2026-08-10 | [solution](problems/0018-implement-k-fold-cross-validation) |
+| [Implement Reduced Row Echelon Form (RREF) Function](https://www.deep-ml.com/problems/48) | medium | 2026-10-11 | [solution](problems/0048-implement-reduced-row-echelon-form-rref-function) |
 | [Implement Self-Attention Mechanism](https://www.deep-ml.com/problems/53) | medium | 2026-09-04 | [solution](problems/0053-implement-self-attention-mechanism) |
 | [Implement Variational Autoencoder (VAE) Loss (ELBO)](https://www.deep-ml.com/problems/393) | medium | 2026-09-15 | [solution](problems/0393-implement-variational-autoencoder-vae-loss-elbo) |
 | [K-Means Clustering](https://www.deep-ml.com/problems/17) | medium | 2026-08-10 | [solution](problems/0017-k-means-clustering) |
