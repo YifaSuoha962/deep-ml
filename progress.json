@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T07:58:31.980Z",
+  "generated_at": "2026-10-11T08:44:36.810Z",
   "items": {
     "problem:887": {
       "kind": "problem",
@@ -1050,9 +1050,9 @@
       "url": "https://www.deep-ml.com/problems/1394",
       "path": "problems/1394-compute-matched-looped-moe-configuration-smelt",
       "first_solved_at": "2026-10-11T07:56:06.174Z",
-      "last_pushed_at": "2026-10-11T07:56:06.174Z",
+      "last_pushed_at": "2026-10-11T08:44:34.950Z",
       "language": "python",
-      "lines": 72
+      "lines": 69
     },
     "problem:48": {
       "kind": "problem",

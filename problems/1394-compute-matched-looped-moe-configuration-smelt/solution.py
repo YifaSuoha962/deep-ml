@@ -18,43 +18,40 @@ def smelt_match(
     ff_mult, kv_heads, head_dim,
     loop_fraction=0.5
 ):
-    # Step 1: Base model costs
-    d_ff = ff_mult * d
+    # compare looped version against the base model with **the same computational resources**!
+    # constraint： flop do not change
 
+    # 1. compute Base model costs
+    d_ff = ff_mult * d
     base_flops = n_blocks * block_flops(d, d_ff, top_k)
     base_params = n_blocks * block_params(d, d_ff, n_experts)
     base_kv = n_blocks * 2 * kv_heads * head_dim
 
-    # Step 2: Calculate looped block applications
-    lam = 1 + loop_fraction
-    applications = round(n_blocks * lam)
-
-    # Step 3: Narrow width (round down to multiple of 8)
-    d_new = int(d / math.sqrt(lam))
-    d_new = (d_new // 8) * 8
+    # 2: create looped components
+    lambd = 1 + loop_fraction
+    applications = round(n_blocks * lambd)
+    
+    # n_block * d^2 = n_blocks * \lambda * d_new^2
+    # -> d_new = d / \sqrt(\lambda)
+    d_new = int(d / math.sqrt(lambd))   # ensure multiple of 8.
+    d_new = (d_new // 8) * 8 
     d_ff_new = ff_mult * d_new
 
-    # Step 4: Increase experts to restore parameter count
+    # add experts with total block parameters reach the base model's
     experts_new = 1
-    while (
-        n_blocks * block_params(d_new, d_ff_new, experts_new)
-        < base_params
-    ):
+    while n_blocks * block_params(d_new, d_ff_new, experts_new) < base_params:
         experts_new += 1
+    # kv cache would accumulates with block increasing
+    # proof: 2*(looped_N)*L*H_KV(new)*d=2*(looped_N)*L*H_KV(base)*d
+    kv_heads_new = max(1, round(kv_heads / lambd))
 
-    # Step 5: Reduce KV heads
-    kv_heads_new = max(1, round(kv_heads / lam))
-
-    # Step 6: Calculate looped model costs
-    looped_flops = applications * block_flops(
-        d_new, d_ff_new, top_k
-    )
-    looped_params = n_blocks * block_params(
-        d_new, d_ff_new, experts_new
-    )
+    # 3. compute Looped model costs
+    looped_flops = applications * block_flops(d_new, d_ff_new, top_k)
+    # parameter is fixed, not growing with number of applications
+    looped_params = n_blocks * block_params(d_new, d_ff_new, experts_new)
     looped_kv = applications * 2 * kv_heads_new * head_dim
 
-    # Step 7: Return cost ratios
+    # Return cost ratios
     return {
         "d_new": d_new,
         "d_ff_new": d_ff_new,
