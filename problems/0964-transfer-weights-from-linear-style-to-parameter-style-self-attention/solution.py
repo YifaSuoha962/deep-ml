@@ -31,7 +31,7 @@ def transfer_and_attend(X, W_q_lin, W_k_lin, W_v_lin):
     # 5. Causal mask: prevent attending to future tokens
     """
     triu - 上三角矩阵, tril - 下三角矩阵
-    k表示有效区域相对对角线的偏移位置： 0-从对角线本身算起, 1-从对象线上面的1行1列区域开始, -1 -从对象线下面的1行1列区域开始
+        k 表示有效区域相对对角线的偏移量： 0-从对角线本身算起, 1-从对象线上面的1行1列区域开始, -1 -从对象线下面的1行1列区域开始
     """
     # 上三角写法
     # mask = np.triu(np.ones(scores.shape, dtype=bool), k=1)
