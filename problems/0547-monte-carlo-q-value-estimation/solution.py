@@ -20,7 +20,7 @@ def mc_q_estimation(episodes: list, n_states: int, n_actions: int, gamma: float,
 
     # 2. traverse episodes
     for ep in episodes:
-        # Compute discounted returns backward
+        # Compute discounted returns backward along each trajectory
         G = 0.0
         times = len(ep)
         returns = [0.0] * len(ep)
@@ -33,7 +33,7 @@ def mc_q_estimation(episodes: list, n_states: int, n_actions: int, gamma: float,
         # track the first visited state 
         visited = set()
 
-        # 3. accumulate returns 
+        # 3. accumulate returns for each pairs
         for t, (state, action, reward) in enumerate(ep):
             pair = (state, action)
             if method == "first_visit":
@@ -47,6 +47,10 @@ def mc_q_estimation(episodes: list, n_states: int, n_actions: int, gamma: float,
     # 4. Compute average returns
     Q = np.zeros((n_states, n_actions))
 
+    """
+    trick: out=Q -- 计算结果会直接写入 Q，而不是返回一个新数组。这样避免了额外内存分配。
+    note: out 必须是与输入兼容的数组
+    """
     np.divide(
         returns_sum,
         counts,

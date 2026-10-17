@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T13:47:40.066Z",
+  "generated_at": "2026-10-17T13:55:00.091Z",
   "items": {
     "problem:887": {
       "kind": "problem",
@@ -1102,9 +1102,9 @@
       "url": "https://www.deep-ml.com/problems/547",
       "path": "problems/0547-monte-carlo-q-value-estimation",
       "first_solved_at": "2026-10-17T13:47:38.025Z",
-      "last_pushed_at": "2026-10-17T13:47:38.025Z",
+      "last_pushed_at": "2026-10-17T13:54:57.311Z",
       "language": "python",
-      "lines": 59
+      "lines": 63
     }
   }
 }
