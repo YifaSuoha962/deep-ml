@@ -40,6 +40,27 @@ def transfer_and_attend(X, W_q_lin, W_k_lin, W_v_lin):
     mask = np.tril(np.ones(scores.shape, dtype=bool), k=0)
     scores[~mask] = -1e9
 
+    """
+    延伸练习：
+    def banded_diagonal_mask(n: int, k: int) -> np.ndarray:
+        
+        构建带状对角掩码矩阵。
+        
+        参数:
+            n: 矩阵大小 (n x n)
+            k: 对角线两侧的斜线条数（带宽）
+        
+        返回:
+            (n, n) 的整数矩阵，满足 |i - j| <= k 的位置为 1，其余为 0
+        
+        # 创建行索引和列索引
+        i = np.arange(n)[:, None]
+        j = np.arange(n)[None, :]
+        # 判断绝对值差是否在 k 以内
+        mask = (np.abs(i - j) <= k).astype(np.int8)
+        return mask
+    """
+
     # 6. Numerically stable softmax over keys
     """ keepdims=True 才能保证逐位计算 """
     scores = scores - np.max(scores, axis=-1, keepdims=True)
@@ -50,3 +71,5 @@ def transfer_and_attend(X, W_q_lin, W_k_lin, W_v_lin):
     output = attn @ V
 
     return output.tolist()
+
+
