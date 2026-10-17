@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T13:38:02.912Z",
+  "generated_at": "2026-10-17T13:47:40.066Z",
   "items": {
     "problem:887": {
       "kind": "problem",
@@ -1092,6 +1092,19 @@
       "last_pushed_at": "2026-10-17T13:38:00.897Z",
       "language": "python",
       "lines": 42
+    },
+    "problem:547": {
+      "kind": "problem",
+      "id": "547",
+      "title": "Monte Carlo Q-Value Estimation",
+      "difficulty": "medium",
+      "category": "Reinforcement Learning",
+      "url": "https://www.deep-ml.com/problems/547",
+      "path": "problems/0547-monte-carlo-q-value-estimation",
+      "first_solved_at": "2026-10-17T13:47:38.025Z",
+      "last_pushed_at": "2026-10-17T13:47:38.025Z",
+      "language": "python",
+      "lines": 59
     }
   }
 }
