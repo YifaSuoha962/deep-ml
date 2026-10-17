@@ -17,9 +17,6 @@ def pos_encoding(position: int, d_model: int):
 
     pe = torch.zeros((position, d_model), dtype=torch.float32)
 
-    # (position, 1)
-    pos = torch.arange(position, dtype=torch.float32).unsqueeze(1)
-
     # (d_model // 2,)
     div_term = 1 / (
         10000 ** (
@@ -28,11 +25,13 @@ def pos_encoding(position: int, d_model: int):
         )
     )
 
-    # (position, d_model // 2)
-    freqs = pos * div_term
+    # frequnc(position, d_model // 2)
+    pos = torch.arange(position, dtype=torch.float32)   # .unsqueeze(1)
+    # freqs = pos * div_term  # outer Product by broadcast mech.
+    freqs = torch.einsum('i,j->ij', pos, div_term)
 
     # 偶数维度用 sin，奇数维度用 cos
-    pe[:, 0::2] = torch.sin(freqs)
+    pe[:, 0::2] = torch.sin(freqs)    # 位置是对上的，特征维度穿插
     pe[:, 1::2] = torch.cos(freqs)
 
     return pe.to(torch.float16)
