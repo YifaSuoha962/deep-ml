@@ -59,7 +59,18 @@ def bleu_score(candidate: list[str], references: list[list[str]], max_n: int = 4
     ref_lengths = [len(ref) for ref in references]
     # min(iterable, key=func) -- 先对每个元素调用 func，再比较 func 的返回值
     # length只是形参，实际上传入的是 ref_lengths 中的元素
+    # min 不知道也不关心形参叫什么，它只是按位置把元素传进去。
     r = min(ref_lengths, key=lambda length: (abs(length - c), length)) 
+    """
+    对应的"原始人"写法
+    best = None
+    best_score = None
+    for length in ref_lengths:          # ← 这里就是“元素”
+        score = (abs(length - c), length)
+        if best_score is None or score < best_score:
+            best_score = score
+            best = length
+    """
 
     if c >= r:
         bp = 1
