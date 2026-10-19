@@ -18,7 +18,8 @@ def huber_loss(y_true, y_pred, delta=1.0):
     abs_diff = np.abs(y_true_arr - y_pred_arr)
 
     # 小误差用平方项，大误差用线性项；<= delta 对应平方项
-	
+    # note: 用 np.where 实现并行化的条件赋值
+    # np.where(condition, case1_result, case2_result)
     loss = np.where(
         abs_diff <= delta,
         0.5 * abs_diff ** 2,
