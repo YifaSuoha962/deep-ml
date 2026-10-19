@@ -2,7 +2,7 @@
 
 My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solution here was written by hand.
 
-**86** solved · 83 problems · 3 labs · 0 math
+**87** solved · 84 problems · 3 labs · 0 math
 
 ![Coverage](./coverage.svg)
 
@@ -65,6 +65,7 @@ My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solu
 | [Implement K-Fold Cross-Validation](https://www.deep-ml.com/problems/18) | medium | 2026-08-10 | [solution](problems/0018-implement-k-fold-cross-validation) |
 | [Implement Reduced Row Echelon Form (RREF) Function](https://www.deep-ml.com/problems/48) | medium | 2026-10-11 | [solution](problems/0048-implement-reduced-row-echelon-form-rref-function) |
 | [Implement Self-Attention Mechanism](https://www.deep-ml.com/problems/53) | medium | 2026-09-04 | [solution](problems/0053-implement-self-attention-mechanism) |
+| [Implement the Huber Loss Function](https://www.deep-ml.com/problems/192) | medium | 2026-10-19 | [solution](problems/0192-implement-the-huber-loss-function) |
 | [Implement Variational Autoencoder (VAE) Loss (ELBO)](https://www.deep-ml.com/problems/393) | medium | 2026-09-15 | [solution](problems/0393-implement-variational-autoencoder-vae-loss-elbo) |
 | [K-Means Clustering](https://www.deep-ml.com/problems/17) | medium | 2026-08-10 | [solution](problems/0017-k-means-clustering) |
 | [Latent Transition Model: Residual Delta MLP](https://www.deep-ml.com/problems/1371) | medium | 2026-09-11 | [solution](problems/1371-latent-transition-model-residual-delta-mlp) |
