@@ -20,6 +20,9 @@ def random_walk_td_mc(
     # TD(0)：按 episode 和转移顺序在线更新。
     # 当前状态的目标值由即时奖励和后继状态的当前估计组成。
     for episode in episodes:
+        """
+        注意计算顺序，是从起点到终点！
+        """
         for state, reward, next_state, done in episode:
             # 到达终止状态后没有后继状态，因此后继价值定义为 0。
             successor_value = 0.0 if done else td_values[next_state]
