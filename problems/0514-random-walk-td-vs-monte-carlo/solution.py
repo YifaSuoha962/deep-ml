@@ -42,6 +42,9 @@ def random_walk_td_mc(
         returns = [0.0] * len(episode)
         running_return = 0.0
 
+        """
+        将各自完整的展开式，带入 G_t - G_{t+1} 得到下面的递推式 
+        """
         # 从 episode 末尾反向计算：G_t = R_{t+1} + gamma * G_{t+1}。
         for index in range(len(episode) - 1, -1, -1):
             _, reward, _, _ = episode[index]
