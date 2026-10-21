@@ -2,7 +2,7 @@
 
 My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solution here was written by hand.
 
-**88** solved · 85 problems · 3 labs · 0 math
+**89** solved · 86 problems · 3 labs · 0 math
 
 ![Coverage](./coverage.svg)
 
@@ -81,6 +81,7 @@ My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solu
 | [Outlier Detection and Removal Using IQR Method](https://www.deep-ml.com/problems/355) | medium | 2026-09-11 | [solution](problems/0355-outlier-detection-and-removal-using-iqr-method) |
 | [Poisson Deviance and Overdispersion](https://www.deep-ml.com/problems/1367) | medium | 2026-10-01 | [solution](problems/1367-poisson-deviance-and-overdispersion) |
 | [Queue from Two Stacks and a Min-Stack](https://www.deep-ml.com/problems/1147) | medium | 2026-10-09 | [solution](problems/1147-queue-from-two-stacks-and-a-min-stack) |
+| [Random Walk: TD vs Monte Carlo](https://www.deep-ml.com/problems/514) | medium | 2026-10-21 | [solution](problems/0514-random-walk-td-vs-monte-carlo) |
 | [SGD with Momentum Step](https://www.deep-ml.com/problems/1235) | medium | 2026-10-01 | [solution](problems/1235-sgd-with-momentum-step) |
 | [Sigmoidal Accuracy-to-Log-Likelihood Scaling Law Fit](https://www.deep-ml.com/problems/790) | medium | 2026-09-09 | [solution](problems/0790-sigmoidal-accuracy-to-log-likelihood-scaling-law-fit) |
 | [Solve Linear Equations using Jacobi Method](https://www.deep-ml.com/problems/11) | medium | 2026-09-05 | [solution](problems/0011-solve-linear-equations-using-jacobi-method) |
