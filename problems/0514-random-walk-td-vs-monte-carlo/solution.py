@@ -58,5 +58,10 @@ def random_walk_td_mc(
         total / count if count else 0.0
         for total, count in zip(return_sums, visit_counts)
     ]
+
+    """
+    TD performs online update and estimation, 
+    while mc performs offline statistics 
+    """
     return td_values, mc_values
 
