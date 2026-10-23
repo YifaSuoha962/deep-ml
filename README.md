@@ -2,7 +2,7 @@
 
 My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solution here was written by hand.
 
-**89** solved · 86 problems · 3 labs · 0 math
+**90** solved · 86 problems · 3 labs · 1 math
 
 ![Coverage](./coverage.svg)
 
@@ -106,6 +106,12 @@ My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solu
 | [Build a Tokenizer for Language Modeling](https://www.deep-ml.com/labs/19) | medium | 2026-09-13 | [solution](labs/0019-build-a-tokenizer-for-language-modeling) |
 | [MNIST: Pytorch DataLoader](https://www.deep-ml.com/labs/1) | medium | 2026-08-08 | [solution](labs/0001-mnist-pytorch-dataloader) |
 | [Train a Tabular Policy with DPO](https://www.deep-ml.com/labs/37) | medium | 2026-08-11 | [solution](labs/0037-train-a-tabular-policy-with-dpo) |
+
+## Math
+
+| | Difficulty | Solved | |
+| --- | --- | --- | --- |
+| [Vector Operations](https://www.deep-ml.com/math-problems/7) | easy | 2026-10-23 | [solution](math/0007-vector-operations) |
 
 ---
 
