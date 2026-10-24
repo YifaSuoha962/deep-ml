@@ -17,6 +17,7 @@ def track_gpu_utilization(timestamps_ms: list, gpu_util_pct: list, phase_labels:
     phase_weighted_util = defaultdict(float)
     phase_wasted = defaultdict(float)
 
+    # 1. 先记录每阶段的 GPU 浪费时间
     # 记录每个阶段第一次出现的位置，用于平局判定
     phase_first_index = {}
 
@@ -40,9 +41,10 @@ def track_gpu_utilization(timestamps_ms: list, gpu_util_pct: list, phase_labels:
     """
     分阶段处理，统计完后再整理成想要的dict
     """
-    # 构造 phase_stats，按阶段名排序
+    # 构造 phase_stats 信息
     phase_stats = {}
-    for phase in sorted(phase_duration):
+    # sorted(phase_duration)
+    for phase in phase_duration:
         duration = phase_duration[phase]
         avg_util = phase_weighted_util[phase] / duration if duration > 0 else 0.0
         time_fraction = (duration / total_time_ms * 100.0) if total_time_ms > 0 else 0.0
@@ -53,10 +55,18 @@ def track_gpu_utilization(timestamps_ms: list, gpu_util_pct: list, phase_labels:
         }
 
     # 瓶颈阶段：浪费 GPU 时间最多的阶段；平局取首次出现最早的
+    """
+    等价写法
+    bottleneck_phase = max(
+        phase_wasted,
+        key=lambda p: (phase_wasted[p], -phase_first_index[p]),
+        )
+    """
     bottleneck_phase = min(
         phase_wasted,
         key=lambda p: (-phase_wasted[p], phase_first_index[p]),
     ) if phase_wasted else None
+
 
     gpu_idle_fraction_pct = 100.0 - avg_gpu_util_pct
 
