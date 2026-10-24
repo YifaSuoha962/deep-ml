@@ -10,6 +10,9 @@ def track_gpu_utilization(timestamps_ms: list, gpu_util_pct: list, phase_labels:
     total_time_ms = timestamps_ms[-1] - timestamps_ms[0]
 
     # 按阶段累计：时长、加权利用率、浪费的 GPU 时间
+    """
+    针对每个阶段，分别维护 time span 和 gpu utility 的 dict，这样避免构建嵌套 dict 加大难度
+    """
     phase_duration = defaultdict(float)
     phase_weighted_util = defaultdict(float)
     phase_wasted = defaultdict(float)
@@ -34,6 +37,9 @@ def track_gpu_utilization(timestamps_ms: list, gpu_util_pct: list, phase_labels:
 
     avg_gpu_util_pct = weighted_util_sum / total_time_ms if total_time_ms > 0 else 0.0
 
+    """
+    分阶段处理，统计完后再整理成想要的dict
+    """
     # 构造 phase_stats，按阶段名排序
     phase_stats = {}
     for phase in sorted(phase_duration):
