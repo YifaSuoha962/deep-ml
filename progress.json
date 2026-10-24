@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T08:22:16.714Z",
+  "generated_at": "2026-10-24T08:54:47.986Z",
   "items": {
     "problem:887": {
       "kind": "problem",
@@ -1181,6 +1181,19 @@
       "last_pushed_at": "2026-10-24T08:22:19.023Z",
       "language": "python",
       "lines": 79
+    },
+    "problem:1032": {
+      "kind": "problem",
+      "id": "1032",
+      "title": "Tokens-per-Second Throughput from Inference Intervals",
+      "difficulty": "medium",
+      "category": "Machine Learning",
+      "url": "https://www.deep-ml.com/problems/1032",
+      "path": "problems/1032-tokens-per-second-throughput-from-inference-intervals",
+      "first_solved_at": "2026-10-24T08:54:50.279Z",
+      "last_pushed_at": "2026-10-24T08:54:50.279Z",
+      "language": "python",
+      "lines": 34
     }
   }
 }
