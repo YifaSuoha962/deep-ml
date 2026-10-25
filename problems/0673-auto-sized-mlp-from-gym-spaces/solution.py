@@ -1,13 +1,5 @@
 import math
 
-def _space_dim(space: dict) -> int:
-    """Return the flattened dimension of a gym-style space description."""
-    if space["type"] == "Box":
-        return math.prod(space["shape"])
-    # Discrete / MultiBinary
-    return space["n"]
-
-
 def auto_mlp_from_spaces(obs_space: dict, act_space: dict, hidden_layers: list) -> dict:
     """
     Automatically determine MLP architecture from environment space definitions.
@@ -24,6 +16,14 @@ def auto_mlp_from_spaces(obs_space: dict, act_space: dict, hidden_layers: list) 
           'layer_shapes': list of ((weight_rows, weight_cols), (bias_dim,)) tuples
           'total_params': int
     """
+
+    def _space_dim(space: dict) -> int:
+        """Return the flattened dimension of a gym-style space description."""
+        if space["type"] == "Box":
+            return math.prod(space["shape"])
+        # Discrete / MultiBinary
+        return space["n"]
+
     input_dim = _space_dim(obs_space)
     output_dim = _space_dim(act_space)
 
