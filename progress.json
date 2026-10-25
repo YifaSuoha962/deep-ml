@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T04:31:09.553Z",
+  "generated_at": "2026-10-25T04:31:51.635Z",
   "items": {
     "problem:887": {
       "kind": "problem",
@@ -1204,9 +1204,9 @@
       "url": "https://www.deep-ml.com/problems/673",
       "path": "problems/0673-auto-sized-mlp-from-gym-spaces",
       "first_solved_at": "2026-10-25T04:28:55.189Z",
-      "last_pushed_at": "2026-10-25T04:31:08.455Z",
+      "last_pushed_at": "2026-10-25T04:31:50.220Z",
       "language": "python",
-      "lines": 45
+      "lines": 48
     }
   }
 }

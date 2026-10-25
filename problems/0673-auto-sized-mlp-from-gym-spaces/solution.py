@@ -32,7 +32,10 @@ def auto_mlp_from_spaces(obs_space: dict, act_space: dict, hidden_layers: list) 
 
     layer_shapes = []
     total_params = 0
-
+    
+    """
+    Note: 错位读取相同数组中的内容，实现差分计算
+    """
     for in_dim, out_dim in zip(dims[:-1], dims[1:]):
         layer_shapes.append(((in_dim, out_dim), (out_dim,)))
         total_params += in_dim * out_dim + out_dim
