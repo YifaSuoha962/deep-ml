@@ -11,9 +11,8 @@ def crossover_size(op: dict) -> int:
     if cython_pe <= numpy_pe:
         return -1
 
-    ratio = (numpy_oh - cython_oh) / (cython_pe - numpy_pe)
-    if ratio <= 0:
-        return 0
+    ratio = max(0, (numpy_oh - cython_oh) / (cython_pe - numpy_pe))
+
     return int(math.ceil(ratio))
 
 

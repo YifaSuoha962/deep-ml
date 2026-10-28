@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T06:49:59.557Z",
+  "generated_at": "2026-10-28T06:50:27.732Z",
   "items": {
     "problem:887": {
       "kind": "problem",
@@ -1243,9 +1243,9 @@
       "url": "https://www.deep-ml.com/problems/676",
       "path": "problems/0676-cython-vs-python-performance-for-array-operations",
       "first_solved_at": "2026-10-28T06:49:13.890Z",
-      "last_pushed_at": "2026-10-28T06:49:57.162Z",
+      "last_pushed_at": "2026-10-28T06:50:26.727Z",
       "language": "python",
-      "lines": 85
+      "lines": 84
     }
   }
 }
