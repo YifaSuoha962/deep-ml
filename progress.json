@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T12:09:47.158Z",
+  "generated_at": "2026-10-30T12:30:21.917Z",
   "items": {
     "problem:887": {
       "kind": "problem",
@@ -1285,6 +1285,19 @@
       "last_pushed_at": "2026-10-30T02:25:48.104Z",
       "language": "python",
       "lines": 16
+    },
+    "problem:74": {
+      "kind": "problem",
+      "id": "74",
+      "title": "Create Composite Hypervector for a Dataset Row",
+      "difficulty": "medium",
+      "category": "Linear Algebra",
+      "url": "https://www.deep-ml.com/problems/74",
+      "path": "problems/0074-create-composite-hypervector-for-a-dataset-row",
+      "first_solved_at": "2026-10-30T12:30:18.934Z",
+      "last_pushed_at": "2026-10-30T12:30:18.934Z",
+      "language": "python",
+      "lines": 39
     }
   }
 }
