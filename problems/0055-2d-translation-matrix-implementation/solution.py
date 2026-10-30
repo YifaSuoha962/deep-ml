@@ -1,31 +1,28 @@
-import torch
+import numpy as np
 
-def translate_object(points, tx, ty) -> torch.Tensor:
-    """
-    Apply a 2D translation to a set of points.
+def translate_object(points, tx, ty):
+    np_points = np.asarray(points, dtype=float)
 
-    Args:
-        points: list of [x, y] coordinates or a tensor of shape (N, 2)
-        tx: translation distance in the x direction
-        ty: translation distance in the y direction
+    if np_points.size == 0:
+        return np_points.reshape(0, 2)
 
-    Returns:
-        Tensor of translated points with shape (N, 2)
-    """
-    points = torch.as_tensor(points)
+    if np_points.ndim != 2 or np_points.shape[1] != 2:
+        raise ValueError("points 必须是形状为 (N, 2) 的点集")
 
-    # Ensure integer inputs can still represent fractional translations.
-    if not points.is_floating_point():
-        points = points.to(torch.float32)
-
-    # Handle an empty list as a tensor with shape (0, 2).
-    if points.numel() == 0:
-        points = points.reshape(0, 2)
-
-    translation = torch.tensor(
-        [tx, ty],
-        dtype=points.dtype,
-        device=points.device,
+    # 每一行从 [x, y] 扩展为 [x, y, 1]
+    homogeneous_points = np.column_stack(
+        (np_points, np.ones(np_points.shape[0]))
     )
 
-    return points + translation
+    # 列向量约定下的 2D 平移矩阵
+    T = np.array([
+        [1, 0, tx],
+        [0, 1, ty],
+        [0, 0, 1],
+    ], dtype=float)
+
+    # 点目前按行存储，因此转置后作为列向量矩阵相乘
+    translated_homogeneous = (T @ homogeneous_points.T).T
+
+    # 去掉齐次坐标，只返回 x、y
+    return translated_homogeneous[:, :2]
