@@ -9,6 +9,7 @@ def rejection_sampling_best_of_k(candidates, scores):
     Returns:
         List of N selected candidates.
     """
+    # range(len(scores[i])) 是 iterable的
     return [
         candidates[i][max(range(len(scores[i])), key=lambda j: scores[i][j])]
         for i in range(len(candidates))
