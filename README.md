@@ -2,7 +2,7 @@
 
 My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solution here was written by hand.
 
-**98** solved · 94 problems · 3 labs · 1 math
+**99** solved · 95 problems · 3 labs · 1 math
 
 ![Coverage](./coverage.svg)
 
@@ -41,6 +41,7 @@ My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solu
 | [Min-Max Scaling of Feature Values](https://www.deep-ml.com/problems/112) | easy | 2026-09-10 | [solution](problems/0112-min-max-scaling-of-feature-values) |
 | [Per-Token Decode Latency from Memory Bandwidth](https://www.deep-ml.com/problems/1214) | easy | 2026-08-21 | [solution](problems/1214-per-token-decode-latency-from-memory-bandwidth) |
 | [Phi Transformation for Polynomial Features](https://www.deep-ml.com/problems/84) | easy | 2026-10-01 | [solution](problems/0084-phi-transformation-for-polynomial-features) |
+| [Rejection Sampling Best-of-K Selection](https://www.deep-ml.com/problems/768) | easy | 2026-10-30 | [solution](problems/0768-rejection-sampling-best-of-k-selection) |
 | [Reshape Matrix](https://www.deep-ml.com/problems/3) | easy | 2026-08-11 | [solution](problems/0003-reshape-matrix) |
 | [RL Training GPU Utilization Tracker](https://www.deep-ml.com/problems/678) | easy | 2026-10-24 | [solution](problems/0678-rl-training-gpu-utilization-tracker) |
 | [Scalar Multiplication of a Matrix](https://www.deep-ml.com/problems/5) | easy | 2026-08-11 | [solution](problems/0005-scalar-multiplication-of-a-matrix) |
