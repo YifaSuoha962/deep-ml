@@ -31,15 +31,15 @@ def segment_image(image, k: int, max_iters: int = 100):
             (flat_pixels[:, np.newaxis, :] - centroids[np.newaxis, :, :]) ** 2,
             axis=2,
         )
-        assignments = np.argmin(distances, axis=1)
+        assignments = np.argmin(distances, axis=1)   # [H*W, 1] -- elem is index
 
         updated_centroids = centroids.copy()
         for cluster_idx in range(k):
             cluster_pixels = flat_pixels[assignments == cluster_idx]
             if len(cluster_pixels) > 0:
                 updated_centroids[cluster_idx] = cluster_pixels.mean(axis=0)
-            # 空簇保留之前的质心
-
+            
+        # 空簇保留之前的质心
         unchanged = np.array_equal(updated_centroids, centroids)
         centroids = updated_centroids
 
