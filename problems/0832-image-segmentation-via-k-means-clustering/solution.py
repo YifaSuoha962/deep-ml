@@ -52,6 +52,8 @@ def segment_image(image, k: int, max_iters: int = 100):
         axis=2,
     )
     final_assignments = np.argmin(final_distances, axis=1)
+    # centroids 根据 final_assignments中的索引 [0, k-1]，收集每个 pixel 对应的 centriod feature
+    # 最后还是形成了 H*W 个特征
     segmented = centroids[final_assignments].reshape(height, width, 3)
 
     return np.round(segmented, 4).tolist()
