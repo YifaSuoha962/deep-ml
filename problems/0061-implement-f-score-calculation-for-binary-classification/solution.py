@@ -1,31 +1,17 @@
 import numpy as np
 
 def f_score(y_true, y_pred, beta):
-	"""
-	Calculate F-Score for a binary classification task.
-
-	:param y_true: Numpy array of true labels
-	:param y_pred: Numpy array of predicted labels
-	:param beta: The weight of precision in the harmonic mean
-	:return: F-Score rounded to three decimal places
-	"""
-	num_pred = y_pred.shape[0]
-	# y_true = 1
-	TP = 0
-	FN = 0
-	# y_true = 0
-	FP = 0
-	TN = 0
-	for i in range(num_pred):
-		if y_true[i] == 1 and y_pred[i] == 1:
-			TP += 1
-		elif y_true[i] == 1 and y_pred[i] == 0:
-			FN += 1
-		elif y_true[i] == 0 and y_pred[i] == 1:
-			FP += 1
-		else:
-			TN += 1
-	precision = TP / (TP + FP)
-	recall = TP / (TP + FN)
-	F_b = (1 + beta ** 2) * precision * recall / (beta ** 2 * precision + recall) 
-	return round(F_b, 3)
+    # 向量化计算 TP, FP, FN
+    TP = np.sum((y_true == 1) & (y_pred == 1))
+    FP = np.sum((y_true == 0) & (y_pred == 1))
+    FN = np.sum((y_true == 1) & (y_pred == 0))
+    
+    # 加入极小值 eps 防止分母为 0 导致报错
+    eps = 1e-10
+    precision = TP / (TP + FP + eps)
+    recall = TP / (TP + FN + eps)
+    
+    beta_sq = beta ** 2
+    F_b = (1 + beta_sq) * precision * recall / (beta_sq * precision + recall + eps)
+    
+    return round(float(F_b), 3)
