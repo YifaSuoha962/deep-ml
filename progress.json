@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T08:14:12.669Z",
+  "generated_at": "2026-11-07T09:02:45.087Z",
   "items": {
     "problem:887": {
       "kind": "problem",
@@ -1415,6 +1415,19 @@
       "last_pushed_at": "2026-11-07T08:14:10.593Z",
       "language": "python",
       "lines": 146
+    },
+    "problem:1966": {
+      "kind": "problem",
+      "id": "1966",
+      "title": "Semantic Segmentation Metrics: Confusion Matrix, Pixel Accuracy, mIoU and Dice",
+      "difficulty": "medium",
+      "category": "Computer Vision",
+      "url": "https://www.deep-ml.com/problems/1966",
+      "path": "problems/1966-semantic-segmentation-metrics-confusion-matrix-pixel-accuracy-miou-and-dice",
+      "first_solved_at": "2026-11-07T09:02:42.177Z",
+      "last_pushed_at": "2026-11-07T09:02:42.177Z",
+      "language": "python",
+      "lines": 87
     }
   }
 }
