@@ -41,6 +41,12 @@ class NaiveBayes():
                 # 未在训练数据中出现的类别，其先验概率为 0。
                 self.log_class_priors_[class_label] = -np.inf
 
+                """
+                对于 Bernoulli Naive Bayes，类别为 \(c\) 时，第 \(j\) 个特征取值为 1 的概率经 Laplace 平滑后为：
+                \[
+                    P(x_j=1\mid y=c)= \frac{N_{c,j}^{(1)}+\alpha} {N_c+2\alpha}
+                \]
+                """
                 # 该类别不会被预测到；仍以平滑值填充，避免无效概率。
                 self.feature_probs_[class_label] = 0.5
                 continue
@@ -72,7 +78,9 @@ class NaiveBayes():
         p1 = self.feature_probs_
         p0 = 1.0 - p1
 
-        # 计算 log P(X | C) + log P(C)。
+        # 计算 log P(X | C) + log P(C)。 
+        # x_i = 1  ---> x_i * log(x_i|C) 有效
+        # x_i = 0  ---> (1 - x_i) * log(x_i|C) 有效
         log_likelihoods = (
             X[:, None, :] * np.log(p1)[None, :, :]
             + (1.0 - X[:, None, :]) * np.log(p0)[None, :, :]
