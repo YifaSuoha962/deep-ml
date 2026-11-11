@@ -2,7 +2,7 @@
 
 My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solution here was written by hand.
 
-**113** solved · 109 problems · 3 labs · 1 math
+**114** solved · 110 problems · 3 labs · 1 math
 
 ![Coverage](./coverage.svg)
 
@@ -112,6 +112,7 @@ My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solu
 | [Tokens-per-Second Throughput from Inference Intervals](https://www.deep-ml.com/problems/1032) | medium | 2026-10-24 | [solution](problems/1032-tokens-per-second-throughput-from-inference-intervals) |
 | [Toy Models of Superposition: Feature Reconstruction](https://www.deep-ml.com/problems/862) | medium | 2026-09-18 | [solution](problems/0862-toy-models-of-superposition-feature-reconstruction) |
 | [Transfer Weights from Linear-Style to Parameter-Style Self-Attention](https://www.deep-ml.com/problems/964) | medium | 2026-10-17 | [solution](problems/0964-transfer-weights-from-linear-style-to-parameter-style-self-attention) |
+| [Bitonic Sort](https://www.deep-ml.com/problems/1319) | hard | 2026-11-11 | [solution](problems/1319-bitonic-sort) |
 | [Determinant of a 4x4 Matrix using Laplace's Expansion (hard)](https://www.deep-ml.com/problems/13) | hard | 2026-09-04 | [solution](problems/0013-determinant-of-a-4x4-matrix-using-laplace-s-expansion-hard) |
 | [Differential Sarsa Algorithm](https://www.deep-ml.com/problems/541) | hard | 2026-08-18 | [solution](problems/0541-differential-sarsa-algorithm) |
 | [Off-Policy n-Step TD Prediction with Importance Sampling](https://www.deep-ml.com/problems/549) | hard | 2026-09-12 | [solution](problems/0549-off-policy-n-step-td-prediction-with-importance-sampling) |
