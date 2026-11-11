@@ -2,7 +2,7 @@
 
 My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solution here was written by hand.
 
-**114** solved · 110 problems · 3 labs · 1 math
+**115** solved · 110 problems · 4 labs · 1 math
 
 ![Coverage](./coverage.svg)
 
@@ -128,6 +128,7 @@ My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solu
 | | Difficulty | Solved | |
 | --- | --- | --- | --- |
 | [Build a Tokenizer for Language Modeling](https://www.deep-ml.com/labs/19) | medium | 2026-09-13 | [solution](labs/0019-build-a-tokenizer-for-language-modeling) |
+| [Design Your Own KV Cache Eviction Policy](https://www.deep-ml.com/labs/a41c9e77-5d2b-4f0e-8c3a-6b7d8e9f0a1b) | medium | 2026-11-11 | [solution](labs/a41c9e77-5d2b-4f0e-8c3a-6b7d8e9f0a1b-design-your-own-kv-cache-eviction-policy) |
 | [MNIST: Pytorch DataLoader](https://www.deep-ml.com/labs/1) | medium | 2026-08-08 | [solution](labs/0001-mnist-pytorch-dataloader) |
 | [Train a Tabular Policy with DPO](https://www.deep-ml.com/labs/37) | medium | 2026-08-11 | [solution](labs/0037-train-a-tabular-policy-with-dpo) |
 
