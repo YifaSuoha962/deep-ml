@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T03:57:58.542Z",
+  "generated_at": "2026-11-12T07:16:44.318Z",
   "items": {
     "problem:887": {
       "kind": "problem",
@@ -1490,9 +1490,9 @@
       "url": "https://www.deep-ml.com/labs/a41c9e77-5d2b-4f0e-8c3a-6b7d8e9f0a1b",
       "path": "labs/a41c9e77-5d2b-4f0e-8c3a-6b7d8e9f0a1b-design-your-own-kv-cache-eviction-policy",
       "first_solved_at": "2026-11-11T08:38:02.993Z",
-      "last_pushed_at": "2026-11-11T08:38:02.993Z",
+      "last_pushed_at": "2026-11-12T07:16:44.441Z",
       "language": "python",
-      "lines": 110
+      "lines": 237
     },
     "problem:608": {
       "kind": "problem",
