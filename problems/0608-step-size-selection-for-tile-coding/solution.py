@@ -16,6 +16,7 @@ def tile_coding_step(base_alpha: float, n_tilings: int, weights: list, active_ti
         'prediction_after', and 'updated_weights'
     """
     # 每个状态有 n_tilings 个活跃特征，因此按平铺数量缩小步长
+    # 切分的是每个权重承担的更新量，让整体学习速度不随 tiling 数量增加而变快。
     adjusted_alpha = base_alpha / n_tilings
 
     # 使用浮点副本，避免修改调用者的权重列表
