@@ -2,7 +2,7 @@
 
 My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solution here was written by hand.
 
-**118** solved · 113 problems · 4 labs · 1 math
+**119** solved · 114 problems · 4 labs · 1 math
 
 ![Coverage](./coverage.svg)
 
@@ -42,6 +42,7 @@ My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solu
 | [Loss-of-Plasticity Diagnostics: Dormant Units and Effective Rank](https://www.deep-ml.com/problems/1595) | easy | 2026-11-05 | [solution](problems/1595-loss-of-plasticity-diagnostics-dormant-units-and-effective-rank) |
 | [Matrix-Vector Dot Product](https://www.deep-ml.com/problems/1) | easy | 2026-08-10 | [solution](problems/0001-matrix-vector-dot-product) |
 | [Min-Max Scaling of Feature Values](https://www.deep-ml.com/problems/112) | easy | 2026-09-10 | [solution](problems/0112-min-max-scaling-of-feature-values) |
+| [Nesterov Accelerated Gradient Optimizer](https://www.deep-ml.com/problems/150) | easy | 2026-11-17 | [solution](problems/0150-nesterov-accelerated-gradient-optimizer) |
 | [Per-Token Decode Latency from Memory Bandwidth](https://www.deep-ml.com/problems/1214) | easy | 2026-08-21 | [solution](problems/1214-per-token-decode-latency-from-memory-bandwidth) |
 | [Phi Transformation for Polynomial Features](https://www.deep-ml.com/problems/84) | easy | 2026-10-01 | [solution](problems/0084-phi-transformation-for-polynomial-features) |
 | [Rejection Sampling Best-of-K Selection](https://www.deep-ml.com/problems/768) | easy | 2026-10-30 | [solution](problems/0768-rejection-sampling-best-of-k-selection) |
