@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T14:01:47.022Z",
+  "generated_at": "2026-11-20T14:03:29.406Z",
   "items": {
     "problem:887": {
       "kind": "problem",
@@ -1555,7 +1555,7 @@
       "url": "https://www.deep-ml.com/problems/1262",
       "path": "problems/1262-identity-preference-optimization-ipo-loss",
       "first_solved_at": "2026-11-20T14:01:45.021Z",
-      "last_pushed_at": "2026-11-20T14:01:45.021Z",
+      "last_pushed_at": "2026-11-20T14:03:27.283Z",
       "language": "python",
       "lines": 40
     }
